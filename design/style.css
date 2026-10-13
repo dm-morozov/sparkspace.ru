@@ -447,3 +447,28 @@ footer .public-contact-compact>a{display:flex!important;align-items:center;margi
 @media(prefers-reduced-motion:reduce){.manager-screen{animation:none}.manager-progress>span{transition:none}}
 .business-flows:not(.flow-enhanced) .manager-outcomes{display:none}
 .flow-showcase .manager-checklist li{color:var(--ink);border-top:0}.flow-showcase .manager-checklist{grid-column:auto;grid-row:auto}
+/* Stage 22: align controls and live result in one shared workbench. */
+.flow-showcase.flow-enhanced .flow-workbench{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);column-gap:40px;row-gap:24px;align-items:start}
+.flow-showcase.flow-enhanced .flow-tabs{grid-column:1;grid-row:1;margin:0;padding:0 0 18px;gap:6px}
+.flow-showcase.flow-enhanced .flow-tabs a{font-size:12px;padding:10px 12px;min-height:44px;display:flex;align-items:center;line-height:1.5}
+.flow-showcase.flow-enhanced [data-flows],.flow-showcase.flow-enhanced .flow-panel:not([hidden]),.flow-showcase.flow-enhanced .flow-layout{display:contents}
+.flow-showcase.flow-enhanced .flow-title{grid-column:1;grid-row:2;margin:0}
+.flow-showcase.flow-enhanced .flow-title h3{font-size:24px;line-height:1.35}
+.flow-showcase.flow-enhanced .flow-main{grid-column:1;grid-row:3}
+.flow-showcase.flow-enhanced .manager-workspace{grid-column:2;grid-row:1/4;margin:0;align-self:start}
+.flow-showcase.flow-enhanced .flow-bottom{grid-column:1/-1;grid-row:4;margin-top:0}
+.flow-showcase .manager-art{margin:0;background:#f6f5fc;border-radius:10px;overflow:hidden}
+.flow-showcase .manager-art img{width:100%;height:auto;object-fit:contain;object-position:center;aspect-ratio:3/2}
+.flow-showcase .flow-node{width:60px;height:60px;border-radius:17px;background:linear-gradient(145deg,#fff,#f1eefb);border:1px solid #ded9ed;color:#62509a;box-shadow:inset 0 1px 0 #fff,0 5px 12px #36245a09;transition:transform .2s,box-shadow .2s,background .2s}
+.flow-showcase .flow-node .process-glyph{width:33px;height:33px}
+.flow-showcase .flow-step[aria-pressed=true] .flow-node{background:linear-gradient(145deg,#765df4,#5436db);color:#fff;border-color:#6a4bea;box-shadow:inset 0 1px 0 #ffffff40,0 7px 18px #6045ee30;transform:translateY(-2px)}
+.flow-showcase .flow-step[aria-pressed=true] .process-glyph{color:#fff}.flow-showcase .flow-step[aria-pressed=true] .process-glyph [fill="#e9e3ff"]{fill:#ffffff15}.flow-showcase .flow-step[aria-pressed=true] .process-glyph [fill="#fff"]{fill:#6950e5}
+.flow-showcase .flow-connector{top:33px;left:calc(50% + 36px);width:calc(100% - 58px);color:#b5accd}
+.flow-showcase .flow-connector:before{top:0;right:7px;border-top:1px solid #b8afcf}
+.flow-showcase .flow-connector:after{top:-3px;right:7px;width:7px;height:7px;border-top:1px solid #a49abd;border-right:1px solid #a49abd}
+.flow-showcase .flow-step.is-complete .flow-node{background:#f0ecfb;border-color:#ddd5f4;color:#6550a2}
+@media(max-width:1050px){.flow-showcase.flow-enhanced .flow-workbench{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);column-gap:25px}.flow-showcase .flow-node{width:48px;height:48px;border-radius:14px}.flow-showcase .flow-node .process-glyph{width:28px;height:28px}.flow-showcase .flow-connector{top:27px;left:calc(50% + 29px);width:calc(100% - 45px)}}
+@media(max-width:800px){.flow-showcase.flow-enhanced .flow-workbench{display:block}.flow-showcase.flow-enhanced .flow-tabs{margin-bottom:24px}.flow-showcase.flow-enhanced .flow-panel:not([hidden]){display:block}.flow-showcase.flow-enhanced .flow-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;margin-top:24px}.flow-showcase.flow-enhanced .flow-main,.flow-showcase.flow-enhanced .manager-workspace{grid-column:auto;grid-row:auto}.flow-showcase.flow-enhanced .manager-workspace{max-width:none}.flow-showcase.flow-enhanced .flow-bottom{margin-top:24px}.flow-showcase .flow-connector{top:27px}}
+@media(max-width:650px){.flow-showcase.flow-enhanced .flow-tabs a{font-size:12px}.flow-showcase .flow-node{width:43px;height:43px;border-radius:12px}.flow-showcase .flow-node .process-glyph{width:27px;height:27px}.flow-showcase .flow-connector{top:25px;left:calc(50% + 25px);width:calc(100% - 37px)}}
+@media(prefers-reduced-motion:reduce){.flow-showcase .flow-node{transition:none}}
+.flow-showcase.flow-enhanced .flow-workbench{grid-template-rows:max-content max-content minmax(0,1fr) max-content}

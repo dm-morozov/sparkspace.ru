@@ -1,4 +1,5 @@
 import stage21
+import stage22
 """Business flows: static content remains useful without JavaScript."""
 from html import escape
 import json
@@ -65,7 +66,11 @@ def flow_section(compact=False):
   start=body.index('<div class="section-heading">')
   end=body.index('<div class="flow-tabs"',start)
   body=body[:start]+'''<div class="showcase-heading"><span class="eyebrow">АВТОМАТИЗАЦИЯ В ДЕЙСТВИИ</span><h2>От заявки до результата.<br>Без потерянных задач.</h2><p>Выберите ваш бизнес и пройдите путь заказа: кто отвечает, что происходит и что видит руководитель.</p><span class="showcase-disclaimer">Примеры сценариев для индивидуальной разработки</span></div>'''+body[end:]
+  body=body.replace('<div class="flow-tabs"', '<div class="flow-workbench"><div class="flow-tabs"',1)
+  body=body.replace('</div><noscript>', '</div></div><noscript>',1)
   for f in FLOWS:
+   for step in f['steps']:
+    body=body.replace('<span class="flow-node">'+icon(step[5])+'</span>', '<span class="flow-node">'+stage22.icon(step[5],icon)+'</span>')
    start=body.index('<aside class="flow-control">')
    end=body.index('</aside>',start)+len('</aside>')
    preview=stage21.dashboard(f)
