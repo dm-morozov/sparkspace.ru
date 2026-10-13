@@ -11,6 +11,8 @@ import stage8
 import stage9
 import stage10
 import stage13
+import stage25_delivery
+import stage25_enquiry
 import stage15
 import stage16
 import stage18
@@ -130,7 +132,7 @@ services_end = home.index('<section class="business-flows',services_start)
 home = home[:services_start] + '<section class="services-surface" id="directions">' + home[services_start:services_end] + '</section>' + home[services_end:]
 delivery_start=home.index('<section class="wrap section process-section">')
 delivery_end=home.index('<section class="wrap cta">',delivery_start)
-home=home[:delivery_start]+stage13.delivery()+stage13.enquiry()
+home=home[:delivery_start]+stage25_delivery.delivery()+stage25_enquiry.enquiry()
 page('index','Сайты, приложения и автоматизация бизнеса',home)
 page('services','Услуги',intro('Услуги','Разработка, продвижение<br>и автоматизация бизнеса','Выберите направление. На каждой странице — задачи, состав работ, ориентир стоимости и порядок запуска.')+'<section class="wrap section compact">'+cards()+'</section>'+cta())
 results={
