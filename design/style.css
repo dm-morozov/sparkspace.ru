@@ -446,3 +446,4 @@ footer .public-contact-compact>a{display:flex!important;align-items:center;margi
 @media(max-width:650px){.flow-showcase .manager-workspace{padding:18px}.manager-art{margin:0 -18px}.manager-art img{height:150px}.flow-showcase .flow-event h4{font-size:24px}.flow-showcase .manager-screen h4{font-size:22px}.manager-outcomes{flex-wrap:wrap}.flow-showcase .flow-event{padding:20px 0}}
 @media(prefers-reduced-motion:reduce){.manager-screen{animation:none}.manager-progress>span{transition:none}}
 .business-flows:not(.flow-enhanced) .manager-outcomes{display:none}
+.flow-showcase .manager-checklist li{color:var(--ink);border-top:0}.flow-showcase .manager-checklist{grid-column:auto;grid-row:auto}
