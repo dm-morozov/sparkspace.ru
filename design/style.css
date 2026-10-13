@@ -581,3 +581,8 @@ footer .public-contact-compact>a{display:flex!important;align-items:center;margi
 @media(max-width:767px){.enquiry25{padding-bottom:54px}.enquiry25-surface{grid-template-columns:minmax(0,1fr);gap:20px;padding:30px}.enquiry25-copy h2{font-size:clamp(30px,5.5vw,40px)}.enquiry25-copy>p{max-width:580px;margin-top:18px}.enquiry25-result{margin-top:18px}.enquiry25-result br{display:none}.enquiry25-actions{max-width:none;justify-self:stretch}.enquiry25-art{width:230px;margin:0 0 12px}.enquiry25-messenger{min-height:98px;flex-direction:row;align-items:center;justify-content:center;gap:12px}.enquiry25-secondary{justify-content:center;gap:0 20px}}
 @media(max-width:400px){.enquiry25-surface{padding:25px 18px}.enquiry25-copy h2{font-size:29px}.enquiry25-copy>p{font-size:14px}.enquiry25-result{font-size:13px}.enquiry25-messengers{gap:10px}.enquiry25-messenger{flex-direction:column;align-items:flex-start;padding:15px 12px;font-size:12px;gap:10px}.enquiry25-secondary{font-size:12px;justify-content:flex-start;gap:0}.enquiry25-secondary a{width:100%}.enquiry25-art{width:210px}}
 @media(prefers-reduced-motion:reduce){.enquiry25-messenger,.enquiry25-secondary a{transition:none}.enquiry25-messenger:hover,.enquiry25-messenger:active{transform:none}}
+/* Stage 26: contact channels form one aligned group. */
+.enquiry25-art{mix-blend-mode:normal}
+.enquiry25-secondary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;justify-content:normal;align-items:start}
+.enquiry25-secondary a{justify-content:center;text-align:center;width:100%;font-size:11px;line-height:1.5}
+@media(max-width:400px){.enquiry25-secondary{grid-template-columns:minmax(0,1fr);gap:0}.enquiry25-secondary a{font-size:12px;justify-content:center}}

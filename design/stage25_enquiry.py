@@ -26,7 +26,7 @@ def enquiry():
 <div class="enquiry25-result"><span>Обсудим подходящий вариант,<br>этапы и оценку стоимости.</span></div>
 </div>
 <div class="enquiry25-actions">
-<img class="enquiry25-art" src="assets/stage25-enquiry-v1.jpg" width="720" height="480" loading="lazy" decoding="async" alt="">
+<img class="enquiry25-art" src="assets/stage26-enquiry-cutout-v1.png" width="720" height="480" loading="lazy" decoding="async" alt="">
 <div class="enquiry25-messengers">''' + ''.join(channels) + '''</div>
 <div class="enquiry25-secondary"><a href="''' + escape(phone[3], quote=True) + '''">''' + escape(phone[2]) + '''</a><a href="''' + escape(email[3], quote=True) + '''">''' + escape(email[2]) + '''</a></div>
 </div>
