@@ -409,3 +409,4 @@ footer .public-contact-compact>a{display:flex!important;align-items:center;margi
 .visual-direction:hover .direction-illustration img,.visual-direction:focus-within .direction-illustration img{transform:scale(1.035)}
 .visual-direction:hover .direction-illustration,.visual-direction:focus-within .direction-illustration{box-shadow:none}
 @media(prefers-reduced-motion:reduce){.direction-illustration img{transition:none}.visual-direction:hover .direction-illustration img,.visual-direction:focus-within .direction-illustration img{transform:none}}
+@media(max-width:700px){#directions .section-heading{display:block}#directions .section-heading>div{width:100%;max-width:none}#directions .section-heading>p{width:100%;max-width:500px;margin-top:18px}}
