@@ -8,6 +8,7 @@ import stage4
 import stage6
 import stage7
 import stage8
+import stage27
 import stage9
 import stage10
 import stage13
@@ -111,7 +112,7 @@ def projects(n=4):
         items += f'<a class="project" href="{href}"{external}><div class="project-image"><img src="assets/{image}" alt="Публичная страница {name}" width="1265" height="712" loading="lazy"><span>{label}</span></div><small>{kind}</small><h3>{name}</h3><p>{desc}</p>{result_html}</a>'
     return '<div class="projects">'+items+'</div>'
 
-home=stage8.hero(btn)
+home=stage27.hero(btn)
 home+='<section class="wrap section"><div class="section-heading"><div><span class="eyebrow">НАШИ НАПРАВЛЕНИЯ</span><h2>Что мы можем сделать<br>для вашей компании</h2></div><p>Запустить новый проект, улучшить существующий или автоматизировать то, что пока приходится делать вручную.</p></div>'+stage10.directions(S,icon)+'</section><section class="soft-section"><div class="wrap section"><div class="section-heading"><div><span class="eyebrow">ОТ ЗАДАЧИ БИЗНЕСА</span><h2>Технологии — под вашу работу</h2></div><a class="text-link" href="solutions.html">Все сценарии →</a></div><div class="industry-grid">'
 for slug,k,h,p in [('property','УПРАВЛЯЮЩИЕ КОМПАНИИ','Заявки жителей.<br>Работа сотрудников.<br>Контроль выполнения.','Единый процесс от обращения до отчёта исполнителя.'),('auto','АВТОСЕРВИСЫ И МАСТЕРСКИЕ','Запись клиентов.<br>Заказ-наряды.<br>История обслуживания.','Инструменты для планирования и работы с заказами.'),('commerce','ТОРГОВЛЯ И ОНЛАЙН-ПРОЕКТЫ','Каталог и продажи.<br>Личные кабинеты.<br>Обмен данными.','Сайт и внутренние процессы как единая система.')]:home+=f'<a href="solutions.html#{slug}"><span>{k}</span><h3>{h}</h3><p>{p}</p><b>Посмотреть решение ↗</b></a>'
 home+='</div></div></section><section class="wrap section"><div class="section-heading"><div><span class="eyebrow">ПРОЕКТЫ</span><h2>От сайта услуг<br>до интерактивного тренажёра</h2></div><a class="text-link" href="projects.html">Все проекты →</a></div>'+stage9.projects()+'</section><section class="wrap section process-section"><div class="section-heading"><div><span class="eyebrow">КАК РАБОТАЕМ</span><h2>Понятный процесс.<br>Контроль на каждом этапе.</h2></div><p>Вы знаете, что входит в проект, какой результат получите и когда принимаете следующий этап.</p></div>'+steps()+'</section>'+cta()

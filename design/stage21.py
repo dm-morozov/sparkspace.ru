@@ -11,7 +11,7 @@ EXAMPLES = {
 
 def dashboard(f):
  key=f['id']; subject, role, sources, checks=EXAMPLES[key]
- h='<aside class="flow-control process-preview manager-workspace"><div class="preview-heading"><span class="preview-indicator" aria-hidden="true"></span><span>Вид руководителя</span><span class="preview-demo">Демо</span></div><figure class="manager-art"><img src="assets/process-route-v1.jpg" width="960" height="640" loading="lazy" decoding="async" alt="Фирменная иллюстрация: обращение, ответственный и выполненная задача"></figure><div class="manager-context"><span>Пример процесса</span><strong>'+escape(subject)+'</strong></div>'
+ h='<aside class="flow-control process-preview manager-workspace"><div class="preview-heading"><span class="preview-indicator" aria-hidden="true"></span><span>Вид руководителя</span><span class="preview-demo">Демо</span></div><figure class="manager-art"><img src="assets/stage27-process-cutout.png" width="960" height="640" loading="lazy" decoding="async" alt="Фирменная иллюстрация: обращение, ответственный и выполненная задача"></figure><div class="manager-context"><span>Пример процесса</span><strong>'+escape(subject)+'</strong></div>'
  for i,(title,status,event,owner,benefit,icon) in enumerate(f['steps']):
   h+=f'<section class="manager-screen manager-screen-{i}" data-manager-screen="{i}"'+(' hidden' if i else '')+'><span class="manager-kicker">'+escape(title)+'</span><h4>'+escape(status)+'</h4>'
   if i==0:
