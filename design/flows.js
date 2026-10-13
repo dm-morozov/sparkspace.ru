@@ -12,10 +12,13 @@ if(flowRoot){
   const flow=flowData.find(f=>f.id===panel.dataset.flowPanel);
   const [title,status,event,owner,action]=flow.steps[index];
   selectedSteps.set(flow.id,index);
+  panel.querySelectorAll('[data-manager-screen]').forEach(view=>{view.hidden=Number(view.dataset.managerScreen)!==index;});
+  panel.querySelectorAll('[data-manager-progress]').forEach(marker=>{marker.classList.toggle('is-complete',Number(marker.dataset.managerProgress)<=index);});
+  panel.querySelectorAll('[data-flow-step]').forEach((button,i)=>button.classList.toggle('is-complete',i<index));
   const preview=panel.querySelector('[data-preview-stage]');
   if(preview){preview.textContent=status;panel.querySelector('[data-preview-owner]').textContent=owner;panel.querySelector('[data-preview-next]').textContent=index<flow.steps.length-1?flow.steps[index+1][0]:'Процесс завершён';}
 
-  panel.querySelector('[data-event-title]').textContent=preview?title:title+' · '+status;
+  panel.querySelector('[data-event-title]').textContent=(preview||panel.querySelector('.manager-workspace'))?title:title+' \u00b7 '+status;
   panel.querySelector('[data-event-text]').textContent=event;
   panel.querySelector('[data-event-owner]').textContent=owner;
   panel.querySelector('[data-event-action]').textContent=action;
@@ -36,6 +39,10 @@ if(flowRoot){
   tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(index+1)%tabs.length;else if(event.key==='ArrowLeft')next=(index+tabs.length-1)%tabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else if(event.key===' '||event.key==='Enter'){event.preventDefault();select(tab.dataset.flowTab);return;}else return;event.preventDefault();select(tabs[next].dataset.flowTab,true);});
  });
  panels.forEach(panel=>{
+  panel.querySelectorAll('[data-outcome]').forEach(button=>button.addEventListener('click',()=>{
+   panel.querySelectorAll('[data-outcome]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+   panel.querySelector('[data-outcome-text]').textContent=button.dataset.outcome;
+  }));
   panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby','tab-'+panel.dataset.flowPanel);
   panel.querySelectorAll('[data-flow-step]').forEach(button=>{button.disabled=false;button.addEventListener('click',()=>step(panel,Number(button.dataset.flowStep)));});
   panel.querySelector('[data-flow-back]').addEventListener('click',()=>step(panel,Math.max(0,(selectedSteps.get(panel.dataset.flowPanel)||0)-1)));

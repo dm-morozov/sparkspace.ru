@@ -1,3 +1,4 @@
+import stage21
 """Business flows: static content remains useful without JavaScript."""
 from html import escape
 import json
@@ -67,8 +68,7 @@ def flow_section(compact=False):
   for f in FLOWS:
    start=body.index('<aside class="flow-control">')
    end=body.index('</aside>',start)+len('</aside>')
-   preview='''<aside class="flow-control process-preview"><div class="preview-heading"><span class="preview-indicator" aria-hidden="true"></span><span>Вид руководителя</span><span class="preview-demo">Пример</span></div><h4>Заказ под контролем</h4><dl class="preview-fields"><div><dt>Текущий этап</dt><dd data-preview-stage></dd></div><div><dt>Ответственный</dt><dd data-preview-owner></dd></div><div><dt>Следующий шаг</dt><dd data-preview-next></dd></div></dl><div class="preview-benefit"><strong>Вместо поиска в переписках</strong><p>Статус, ответственность и следующий шаг собраны в одном месте.</p></div></aside>'''
-   preview=preview.replace('data-preview-stage></dd>','data-preview-stage>'+escape(f['steps'][0][1])+'</dd>').replace('data-preview-owner></dd>','data-preview-owner>'+escape(f['steps'][0][3])+'</dd>').replace('data-preview-next></dd>','data-preview-next>'+escape(f['steps'][1][0])+'</dd>')
+   preview=stage21.dashboard(f)
    # Replace each original aside; previews have a distinct class so the next lookup skips them.
    body=body[:start]+preview+body[end:]
   body=body.replace('ДЕЙСТВИЕ И ОТВЕТСТВЕННОСТЬ','ЧТО ПРОИСХОДИТ НА ЭТОМ ШАГЕ')
