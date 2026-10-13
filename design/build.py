@@ -15,6 +15,7 @@ import stage13
 import stage25_delivery
 import stage25_enquiry
 import stage15
+import stage28
 import stage16
 import stage18
 R=Path(__file__).parent
@@ -156,7 +157,7 @@ for i,(slug,name,h,desc,price,formats,deliver,scope,faq) in enumerate(S):
  if slug == 'websites': b = b.replace(cta(), stage3.formats() + cta())
  if slug == 'audit': b = b.replace(cta(), stage3.audit_example() + cta())
  if slug == 'redesign': b = b.replace(cta(), stage3.redesign_checks() + cta())
- if slug == 'websites': b = stage15.websites(faq)
+ if slug == 'websites': b = stage28.websites(faq)
  if slug == 'applications': b = stage16.applications(faq)
  if slug == 'automation': b = stage18.automation(faq)
  page(slug,name,b)

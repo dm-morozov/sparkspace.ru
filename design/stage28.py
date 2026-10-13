@@ -1,0 +1,28 @@
+"""Website service: one comparison, explicit budgets and a real project."""
+from html import escape
+import stage25_delivery
+import stage25_enquiry
+
+def websites(faq):
+    body='''<div class="website-service website28"><section class="website-intro"><div class="wrap"><nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span aria-hidden="true">/</span><a href="services.html">Услуги</a><span aria-hidden="true">/</span><span aria-current="page">Разработка сайтов</span></nav><div class="website-hero"><div class="website-copy"><h1>Разработка сайтов<br>для вашего бизнеса</h1><p>Лендинги, сайты компаний и интернет-магазины. Продумываем путь клиента от первого просмотра до заявки или заказа.</p><div class="website-hero-actions"><a class="btn primary" href="contacts.html?service=websites">Обсудить сайт</a><a class="website-secondary" href="#website-formats">Сравнить форматы</a></div><div class="website-start-price"><span>Лендинг <strong>от 20 000 ₽</strong></span><span>Сайт компании <strong>от 50 000 ₽</strong></span></div></div><figure class="website28-art"><img src="assets/stage28-websites-v1.png" width="960" height="640" fetchpriority="high" decoding="async" alt="Фирменная композиция трёх форматов: сайт услуги, сайт компании и интернет-магазин"><figcaption>Свой формат для каждой задачи</figcaption></figure></div></div></section><section class="wrap website-formats" id="website-formats"><div class="website-section-heading"><h2>Какой сайт нужен вам?</h2><p>Выбираем по задаче клиента, а не по количеству страниц.</p></div><div class="website-options">'''
+    choices=[('Лендинг','Продать одну услугу или продукт','от 20 000 ₽','Одна страница до 6 блоков с готовыми материалами и одной формой заявки.','Один общий список правок в рамках задания.','Обсудить лендинг'),('Сайт компании','Представить несколько направлений','от 50 000 ₽','До 5 страниц с готовыми материалами и одной формой на общей дизайн-системе.','Два общих списка правок. CMS, каталог и интеграции отдельно.','Обсудить сайт компании'),('Интернет-магазин','Помочь выбрать товар и оформить заказ','По смете','Категории, карточки товаров и согласованный сценарий оформления заказа.','Оплата, доставка, обмен с учётом и объём каталога определяют состав и бюджет.','Обсудить магазин')]
+    for index,(name,aim,price,scope,note,cta) in enumerate(choices):
+        body+=f'<article class="website-option">'+format_visual(index)+f'<h3>{name}</h3><p class="website-aim">{aim}</p><strong class="website-price">{price}</strong><p class="website-option-scope">{scope}</p><p class="website-option-note">{note}</p><a href="contacts.html?service=websites">{cta}</a></article>'
+    body+='''</div><p class="website-price-note">Точную стоимость и сроки фиксируем после обсуждения задачи. Домен, хостинг, тексты, лицензии и сторонние сервисы оплачиваются отдельно.</p><div class="website-existing"><div><h3>Сайт уже есть?</h3><p>Посмотрим, что можно улучшить и какой функционал сохранить.</p></div><div><a href="redesign.html">Редизайн сайта</a><a href="audit.html">Аудит сайта</a></div></div></section><section class="website-scope"><div class="wrap"><div class="website-section-heading"><h2>От структуры до запуска</h2><p>Объём каждого этапа согласуем до договора. Дополнительные функции сначала оцениваем.</p></div><div class="website-scope-grid"><article><h3>Понятно посетителю</h3><p>Структура, дизайн и адаптация для телефона. Услуги и способ обращения легко найти.</p></article><article><h3>Проверено перед запуском</h3><p>Проверяем формы, навигацию и согласованные сценарии. Готовим базовые метаданные страниц.</p></article><article><h3>Передано вам</h3><p>Файлы и доступы, инструкция по работе. CMS подключаем при необходимости по отдельной смете.</p></article></div></div></section>'''
+    body+='''<section class="wrap website28-case"><div class="website28-case-copy"><span class="eyebrow">РЕАЛЬНЫЙ ПРОЕКТ</span><h2>Сайт, который ведёт<br>к выбору праздника</h2><p>Для собственного бизнеса «Мир улыбок» создали структуру, оформление и фотографии. Связали программы праздников, выбор клиента и заявки в Telegram.</p><a href="case-mu56.html">Разобрать кейс «Мир улыбок»</a></div>'''+'<figure class="website-proof"><a href="case-mu56.html" aria-label="Посмотреть кейс сайта Мир улыбок"><img src="assets/mu56-home-desktop.jpg" width="1265" height="712" alt="Мир улыбок: выбор программы праздника и обращение с сайта"></a><figcaption><strong>Мир улыбок</strong><span>Сайт собственного бизнеса: от структуры и фотографий до Telegram-бота.</span><a href="case-mu56.html">Посмотреть кейс</a></figcaption></figure>'+'''</section>'''
+    body+=stage25_delivery.delivery()
+    body+='<section class="wrap website-faq"><h2>Перед началом работы</h2><div>'
+    for q,a in faq:
+        body+=f'<details><summary>{escape(q)}<span aria-hidden="true">+</span></summary><p>{escape(a)}</p></details>'
+    body+='</div></section>'
+    return body+stage25_enquiry.enquiry().replace('href="contacts.html"','href="contacts.html?service=websites"')+'</div>'
+
+
+def format_visual(index):
+    labels=['Одна услуга. Один следующий шаг.','Направления, проекты и доверие.','От выбора товара до заказа.']
+    art=[
+     '<div class="format28-sheet format28-landing"><i></i><b></b><span></span><span></span><em></em></div>',
+     '<div class="format28-sheet format28-company"><i></i><b></b><div><span></span><span></span><span></span></div><em></em></div>',
+     '<div class="format28-sheet format28-shop"><i></i><div><span></span><span></span><span></span></div><b></b><em></em></div>'
+    ]
+    return '<div class="format28-visual" aria-hidden="true">'+art[index]+'</div><span class="format28-label">'+labels[index]+'</span>'
