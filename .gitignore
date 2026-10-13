@@ -19,3 +19,20 @@ design/__pycache__/
 .local/
 *.zip
 
+
+frontend/
+docs/
+backend/*
+!backend/docker/
+backend/docker/*
+!backend/docker/static-manifest.json
+design/*.html
+design/assets/app-product-concept-v1.png
+Dockerfile
+.dockerignore
+docker-compose.yml
+package-lock.json
+
+design/archive-v2/
+design/README.md
+
