@@ -1,0 +1,12 @@
+{
+  "created": "2026-10-19",
+  "method": "Built-in image_gen tool; transparent 3D conceptual illustrations, not client screenshots",
+  "shared_prompt": "Premium 3D illustration for SparkSpace service website. Landscape 3:2, transparent background. Warm ivory ceramic, translucent lavender glass #7852db, delicate pale chrome edging. Soft studio lighting, rounded dimensional digital objects, isolated cutout, all objects fully contained with margin. No text, letters, logos, numbers, watermarks or fabricated metrics.",
+  "images": [
+    {"path": "assets/service-integrations-v1.webp", "prompt": "Ivory website browser window connected by translucent lavender conduit to a central ivory CRM cabinet with three violet tabs, then a notification panel with a sculpted checkmark. Direction left to right."},
+    {"path": "assets/service-seo-v1.webp", "prompt": "Ivory porcelain search window with a lavender glass magnifier beside a branching hierarchy of three connected page panels. Website structure and search, no performance metrics."},
+    {"path": "assets/service-redesign-v1.webp", "prompt": "Two ivory website panels side by side: disorganized faint content blocks on the left, clear hierarchy and lavender sphere on the right. Curved lavender connector indicates conceptual rearrangement, no client before/after claim."},
+    {"path": "assets/service-audit-v1.webp", "prompt": "Ivory website browser panel examined by a lavender glass magnifier, with three lavender annotation frames around an image, button and heading. Areas to inspect, no error counts."},
+    {"path": "assets/service-support-v1.webp", "prompt": "Ivory website browser panel beside a lavender glass gear and a small ivory checklist panel with two lavender checkmarks. Updates and functional checks, no uptime numbers."}
+  ]
+}

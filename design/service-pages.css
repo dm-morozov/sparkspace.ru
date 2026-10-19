@@ -1,0 +1,33 @@
+/* Service illustrations retain the existing light lavender visual language. */
+.external-arrow{width:1em;height:1em;display:inline-block;vertical-align:-.12em;flex-shrink:0}
+@media(max-width:1180px){.header-focused .mega-panel{max-height:none;overflow:visible}}
+@media(max-width:540px){
+ .header-focused nav{padding:18px 14px}
+ .header-focused .menu-group>a{display:grid;grid-template-columns:22px minmax(0,1fr);column-gap:10px;padding:14px 0;min-height:66px}
+ .header-focused .menu-group>a>svg{width:22px;height:22px;flex:none}
+ .header-focused .menu-group>a>span:not(.menu-arrow){min-width:0;overflow-wrap:normal;word-break:normal}
+ .header-focused .menu-group>a>.menu-arrow{display:none}
+ .header-focused .menu-group small{overflow-wrap:normal}
+}
+.contact-context{padding:32px 36px;background:#f6f5fb;border-radius:12px;margin-bottom:64px}.contact-context[hidden]{display:none}.contact-context h2{font-size:26px}.contact-context label{display:block;margin:22px 0 10px;font-size:14px;color:var(--muted)}.contact-context textarea{display:block;width:100%;padding:16px;border:1px solid #c6bddc;border-radius:8px;background:white;color:var(--ink);resize:vertical;line-height:1.7}.contact-context button{margin-top:18px;border:0}.contact-context [role=status]{font-size:14px;margin-top:12px;color:var(--muted);min-height:24px}
+.service29-intro{background:#f6f5fb;padding:26px 0 52px}
+.service29-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:42px;margin-top:36px}
+.service29 h1{font-size:clamp(36px,4vw,58px);line-height:1.12}
+.service29-hero>div>p:not(.service29-price){font-size:18px;line-height:1.75;color:var(--muted);margin-top:24px;max-width:520px}
+.service29-price{margin-top:24px;font-size:17px;font-weight:500}
+.service29-art{margin:0;min-width:0}.service29-art img{width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}.service29-art figcaption{font-size:12px;color:var(--muted);text-align:center;margin-top:8px}
+.service29-scenario{padding-block:76px}.service29-heading{max-width:760px;margin-bottom:36px}.service29-heading p{margin-top:20px;color:var(--muted);max-width:650px;font-size:16px;line-height:1.8}
+.service29-route{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;counter-reset:route}
+.service29-route li{position:relative;border-top:2px solid #c6b8ed;padding:26px 12px 0 0;counter-increment:route}
+.service29-route li:before{content:counter(route,decimal-leading-zero);display:block;font-size:13px;color:var(--purple);margin-bottom:20px}
+.service29-route-label{font-size:13px;color:var(--muted)}.service29-route h3{font-size:25px;margin:8px 0 16px}.service29-route p{font-size:15px;line-height:1.8;color:var(--muted)}
+.service29-caption{font-size:13px;color:var(--muted);margin-top:28px;max-width:720px}
+.service29-directions{background:#faf9fd;padding-block:64px}.service29-formats{margin-top:34px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 64px}.service29-formats h3{font-size:24px}.service29-formats p{margin-top:14px;color:var(--muted);line-height:1.8;font-size:15px;max-width:520px}
+.service29-delivery{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:72px;padding-block:76px}.service29-delivery>div>p{margin-top:22px;max-width:390px;color:var(--muted);line-height:1.8}.service29-delivery ol{list-style:none;padding:0;margin:0;counter-reset:delivery}.service29-delivery li{padding:15px 0 15px 42px;position:relative;border-bottom:1px solid var(--border);font-size:15px;counter-increment:delivery}.service29-delivery li:before{content:counter(delivery,decimal-leading-zero);position:absolute;left:0;color:var(--purple);font-size:12px;top:18px}
+.service29-budget{padding:32px 36px;background:#f4f1fb;border-radius:12px;margin-bottom:48px}.service29-budget h2{font-size:28px}.service29-budget strong{display:block;font-size:24px;margin-top:22px;font-weight:500}.service29-budget p{max-width:940px;color:var(--muted);font-size:15px;line-height:1.8;margin-top:14px}
+.service29-proof{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:56px;align-items:center;padding-block:30px 70px}.service29-proof p{color:var(--muted);margin:20px 0;line-height:1.8;max-width:400px}.service29-proof img{width:100%;height:auto;border:1px solid var(--border);border-radius:12px}
+.service29-route li{transition-delay:calc(var(--step,0)*90ms)}.service29-route li:nth-child(2){--step:1}.service29-route li:nth-child(3){--step:2}
+@media(max-width:650px){.service29-proof{grid-template-columns:1fr;gap:22px;padding-block:10px 45px}.contact-context{padding:26px 20px}.contact-context h2{font-size:23px}.contact-context button{font-size:14px}}
+@media(max-width:900px){.service29-hero{grid-template-columns:1fr;gap:24px}.service29-art{max-width:560px;margin:auto}.service29-hero>div>p:not(.service29-price){max-width:650px}.service29-delivery{gap:35px}.service29-route{gap:22px}}
+@media(max-width:650px){.service29-intro{padding-bottom:32px}.service29-hero{margin-top:24px}.service29 h1{font-size:36px}.service29-hero>div>p:not(.service29-price){font-size:15px;margin-top:20px}.service29 .website-hero-actions{gap:14px 22px}.service29 .website-hero-actions .btn{font-size:14px}.service29-price{font-size:15px}.service29-art{max-width:420px}.service29-scenario,.service29-delivery{padding-block:46px}.service29-route,.service29-formats,.service29-delivery{grid-template-columns:1fr}.service29-route{gap:28px}.service29-route li{padding-top:18px}.service29-route li:before{margin-bottom:10px}.service29-directions{padding-block:44px}.service29-formats{gap:28px}.service29-budget{padding:26px 20px}.service29-budget h2{font-size:26px}.service29-budget strong{font-size:21px}.service29-delivery h2 br{display:none}}
+@media(prefers-reduced-motion:reduce){.service29 [data-app-reveal]{opacity:1;transform:none;transition:none}}
