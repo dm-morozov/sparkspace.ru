@@ -1,4 +1,5 @@
 node_modules/
+.qa/
 dist/
 .venv/
 __pycache__/

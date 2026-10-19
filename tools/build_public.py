@@ -13,6 +13,20 @@ runpy.run_path(str(SOURCE / 'build.py'), run_name='__main__')
 import stage6
 
 manifest = json.loads((ROOT / 'backend/docker/static-manifest.json').read_text(encoding='utf-8'))
+responsive = json.loads((ROOT / 'tools/responsive_images.json').read_text(encoding='utf-8')) if (ROOT / 'tools/responsive_images.json').exists() else {}
+
+def responsive_image(match):
+    tag = match.group(0)
+    source = re.search(r' src="([^"]+)"', tag)
+    if not source or source[1] not in responsive:
+        return tag
+    variants = responsive[source[1]]
+    tag = tag.replace(source[0], f' src="{variants[-1][0]}"')
+    sizes = '(max-width: 650px) calc(100vw - 40px), (max-width: 900px) 560px, 50vw'
+    if source[1].endswith('stage27-hero-v1.png'):
+        sizes = '(max-width: 900px) calc(100vw - 40px), 50vw'
+    attributes = ' srcset="' + ', '.join(f'{path} {width}w' for path,width in variants) + f'" sizes="{sizes}"'
+    return tag.replace('<img', '<img' + attributes, 1)
 names = [n for n in manifest if n not in {'consent-draft.html', 'lead-form.js'}]
 TARGET.mkdir(parents=True, exist_ok=True)
 # Only overwrite release allowlist files; do not touch other local directories.
@@ -21,6 +35,9 @@ for name in names:
     dst.parent.mkdir(parents=True, exist_ok=True)
     if not name.endswith('.html'):
         shutil.copyfile(src, dst)
+        if name == 'style.css':
+            css = src.read_text(encoding='utf-8').replace("@import url('service-pages.css');", '')
+            dst.write_text(css + '\n' + (SOURCE/'service-pages.css').read_text(encoding='utf-8'), encoding='utf-8')
         continue
     html = src.read_text(encoding='utf-8')
     html = html.replace('<meta name="robots" content="noindex,nofollow">', '<meta name="robots" content="index,follow">')
@@ -28,6 +45,13 @@ for name in names:
     if name == 'contacts.html':
         contact = '<main id="main"><section class="wrap inner-intro"><div class="breadcrumb"><a href="index.html">Главная</a><span>/</span>Контакты</div><h1>Обсудим ваш проект</h1><p>Расскажите о задаче, пришлите ссылку на сайт или примеры. Обсудим подходящее решение, этапы и стоимость.</p></section><section class="wrap public-enquiry"><div><h2>Выберите удобный способ связи</h2>' + stage6.links() + '</div><aside><h2>С чего начать</h2><p>Чем занимается ваш бизнес? Что хотите сделать или улучшить? Если сайт уже есть, приложите его адрес.</p><p>Готовое техническое задание не обязательно. Состав работ и бюджет согласуем до начала проекта.</p></aside></section></main>'
         html = re.sub(r'<main id="main">.*?</main>', lambda _: contact, html, flags=re.S)
+        starter = '<section class="wrap contact-context" data-contact-context hidden><h2>Ваше направление: <span data-service-name></span></h2><label for="message-starter">Начало сообщения. Можно дополнить и скопировать.</label><textarea id="message-starter" rows="5"></textarea><button class="btn primary" type="button">Скопировать текст</button><p role="status" aria-live="polite"></p></section>'
+        html = html.replace('<section class="wrap public-enquiry">', starter + '<section class="wrap public-enquiry">')
+        html = html.replace('</body>', '<script src="contact-context.js"></script></body>')
+    # Render an SVG instead of relying on a font containing diagonal-arrow glyphs.
+    arrow = '<svg class="external-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>'
+    html = html.replace('↗', arrow)
+    html = re.sub(r'<img\b[^>]*>', responsive_image, html)
     url = DOMAIN + ('/' if name == 'index.html' else '/' + name)
     title = re.search(r'<title>(.*?)</title>', html).group(1)
     meta = f'<link rel="canonical" href="{url}"><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:site_name" content="SparkSpace"><meta property="og:title" content="{title}"><meta property="og:url" content="{url}"><meta property="og:image" content="{DOMAIN}/assets/app-product-concept-v1.jpg"><link rel="icon" href="assets/sparkspace-mark.png">'
@@ -48,6 +72,8 @@ class Page(HTMLParser):
         self.h1 += tag == 'h1'; self.forms += tag == 'form'
         if 'id' in a: self.ids.add(a['id'])
         self.refs.extend(a[k] for k in ('href','src') if k in a)
+        if 'srcset' in a:
+            self.refs.extend(item.strip().split()[0] for item in a['srcset'].split(','))
 
 pages={n:Page((TARGET/n).read_text(encoding='utf-8')) for n in names if n.endswith('.html')}
 for n,page in pages.items():
@@ -55,6 +81,7 @@ for n,page in pages.items():
     assert page.forms == 0, n
     text=(TARGET/n).read_text(encoding='utf-8')
     assert 'noindex' not in text and '/api/v1/leads' not in text and 'consent-draft.html' not in text, n
+    assert '↗' not in text, n
     for ref in page.refs:
         u=urlsplit(ref)
         if u.scheme or u.netloc: continue

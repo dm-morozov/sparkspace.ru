@@ -5,7 +5,7 @@ document.addEventListener('click',e=>{if(!mega.contains(e.target))mega.open=fals
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(mega.open){mega.open=false;mega.querySelector('summary').focus()}else if(nav.classList.contains('open')){closeNavigation();toggle.focus()}}});
 mega.addEventListener('focusout',e=>{if(e.relatedTarget&&!mega.contains(e.relatedTarget))mega.open=false});
 nav.addEventListener('focusout',e=>{if(e.relatedTarget&&!nav.contains(e.relatedTarget)&&e.relatedTarget!==toggle)closeNavigation()});
-const mobileNavigation=window.matchMedia('(max-width:1100px)');
+const mobileNavigation=window.matchMedia('(max-width:1180px)');
 mobileNavigation.addEventListener('change',()=>closeNavigation());
 const current=location.pathname.split('/').pop()||'index.html';
 nav.querySelectorAll('a[href]').forEach(a=>{if(a.getAttribute('href')===current){a.setAttribute('aria-current','page');if(mega.contains(a))mega.classList.add('is-current')}});
