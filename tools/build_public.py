@@ -11,6 +11,7 @@ DOMAIN = 'https://sparkspace.ru'
 sys.path.insert(0, str(SOURCE))
 runpy.run_path(str(SOURCE / 'build.py'), run_name='__main__')
 import stage6
+import stage29_company
 
 manifest = json.loads((ROOT / 'backend/docker/static-manifest.json').read_text(encoding='utf-8'))
 names = [n for n in manifest if n not in {'consent-draft.html', 'lead-form.js'}]
@@ -26,7 +27,7 @@ for name in names:
     html = html.replace('<meta name="robots" content="noindex,nofollow">', '<meta name="robots" content="index,follow">')
     html = re.sub(r'<script src="lead-form\.js[^\"]*"></script>', '', html)
     if name == 'contacts.html':
-        contact = '<main id="main"><section class="wrap inner-intro"><div class="breadcrumb"><a href="index.html">Главная</a><span>/</span>Контакты</div><h1>Обсудим ваш проект</h1><p>Расскажите о задаче, пришлите ссылку на сайт или примеры. Обсудим подходящее решение, этапы и стоимость.</p></section><section class="wrap public-enquiry"><div><h2>Выберите удобный способ связи</h2>' + stage6.links() + '</div><aside><h2>С чего начать</h2><p>Чем занимается ваш бизнес? Что хотите сделать или улучшить? Если сайт уже есть, приложите его адрес.</p><p>Готовое техническое задание не обязательно. Состав работ и бюджет согласуем до начала проекта.</p></aside></section></main>'
+        contact = '<main id="main">' + stage29_company.contacts() + '</main>'
         html = re.sub(r'<main id="main">.*?</main>', lambda _: contact, html, flags=re.S)
     url = DOMAIN + ('/' if name == 'index.html' else '/' + name)
     title = re.search(r'<title>(.*?)</title>', html).group(1)

@@ -16,6 +16,11 @@ import stage25_delivery
 import stage25_enquiry
 import stage15
 import stage28
+import stage29_services
+import stage29_products
+import stage29_company
+import stage29_portfolio
+import stage29_service_detail
 import stage16
 import stage18
 R=Path(__file__).parent
@@ -136,7 +141,7 @@ delivery_start=home.index('<section class="wrap section process-section">')
 delivery_end=home.index('<section class="wrap cta">',delivery_start)
 home=home[:delivery_start]+stage25_delivery.delivery()+stage25_enquiry.enquiry()
 page('index','Сайты, приложения и автоматизация бизнеса',home)
-page('services','Услуги',intro('Услуги','Разработка, продвижение<br>и автоматизация бизнеса','Выберите направление. На каждой странице — задачи, состав работ, ориентир стоимости и порядок запуска.')+'<section class="wrap section compact">'+cards()+'</section>'+cta())
+page('services','Услуги',stage29_services.services(S))
 results={
 'websites':'Готовый адаптивный сайт с согласованными функциями, доступами и инструкцией по управлению.',
 'applications':'Рабочая версия приложения с нужными ролями, сценариями и документацией для дальнейшего развития.',
@@ -158,19 +163,20 @@ for i,(slug,name,h,desc,price,formats,deliver,scope,faq) in enumerate(S):
  if slug == 'audit': b = b.replace(cta(), stage3.audit_example() + cta())
  if slug == 'redesign': b = b.replace(cta(), stage3.redesign_checks() + cta())
  if slug == 'websites': b = stage28.websites(faq)
- if slug == 'applications': b = stage16.applications(faq)
- if slug == 'automation': b = stage18.automation(faq)
+ if slug == 'applications': b = stage29_products.applications((slug,name,h,desc,price,formats,deliver,scope,faq),faq)
+ if slug == 'automation': b = stage29_products.automation((slug,name,h,desc,price,formats,deliver,scope,faq),faq)
+ if slug in stage29_service_detail.CONFIG: b = stage29_service_detail.service((slug,name,h,desc,price,formats,deliver,scope,faq),faq)
  page(slug,name,b)
 solutions=[('property','Управляющие компании','От обращения жителя до закрытой заявки',['Приём и классификация обращений','Распределение задач между исполнителями','Статусы, сроки и история выполнения','Отчёты по адресам и видам работ'],'Начнём с обработки заявок и проверим процесс на небольшой группе сотрудников.','automation'),('auto','Автосервисы и мастерские','Запись, обслуживание и повторные обращения',['Онлайн-запись и загрузка постов','Карточки клиентов и история обслуживания','Заказ-наряды, работы и материалы','Уведомления и отчёты по заказам'],'Согласуем этапы заказа и роли сотрудников. Определим, какие данные нужны из существующего учёта.','automation'),('commerce','Торговля','От выбора товара до обработки заказа',['Каталог, поиск и оформление покупки','Личный кабинет клиента','Обмен заказами и остатками','Аналитика этапов покупки'],'Начнём со структуры каталога и правил заказа. Способы обмена данными проверим до оценки интеграций.','websites'),('education','Эксперты и обучение','Организовать продажи и обучение',['Сайт продукта или эксперта','Кабинет с материалами курса','Тесты, задания и прогресс','Доступ по правилам продукта'],'Первую версию строим вокруг одного курса или ключевого сценария. Остальные возможности добавляем по плану.','applications')]
 b=intro('Решения для бизнеса','Что можно автоматизировать<br>в вашей компании','Примеры задач для заказной разработки. Подберём состав решения под ваш процесс, команду и бюджет.')
 for id,k,h,items,p,service in solutions:b+=f'<section class="wrap solution-detail" id="{id}"><div><span class="eyebrow">{k}</span><h2>{h}</h2><p>{p}</p>'+btn('Обсудить решение','?service='+service)+'</div><ul>'+''.join(f'<li><span>✓</span>{x}</li>' for x in items)+'</ul></section>'
-page('solutions','Решения для бизнеса',intro('Решения для бизнеса','От обращения<br>к выполненной работе','Показываем, как можно связать действия, статусы и ответственность. Выберите близкий процесс и посмотрите, что будет видно команде и руководителю.')+stage4.flow_section()+'<section class="wrap section solution-directions"><span class="eyebrow">ПОДХОДЯЩИЕ НАПРАВЛЕНИЯ</span><div class="case-related-links"><a href="automation.html">Автоматизация →</a><a href="integrations.html">Интеграции →</a><a href="websites.html">Разработка сайтов →</a><a href="applications.html">Веб-приложения →</a></div></section>'+cta())
-page('projects','Проекты',intro('Проекты','Сайты, каталоги<br>и цифровые сервисы','Примеры проектов, с которыми работаем. Посмотрите публичные страницы и форматы решений для разных задач бизнеса.')+'<section class="wrap section compact">'+projects()+'</section>'+cta())
-page('about','О компании',intro('О SparkSpace','Команда для разработки<br>и развития вашего бизнеса','Создаём сайты, приложения и инструменты автоматизации. Объединяем проектирование, дизайн, программирование и продвижение.')+'<section class="wrap about-grid"><article class="about-accent"><span class="eyebrow">SPARKSPACE</span><h2>Вникаем в задачу.<br>Отвечаем за работу.<br>Доводим до запуска.</h2><p>Работаем из Оренбурга с заказчиками по всей России.</p></article><div><h2>Как устроена наша работа</h2><p>Начинаем с того, как работает компания и что нужно её клиентам. Определяем решение, состав работ и критерии результата.</p><p>В команде есть разработчики с опытом около 15 лет. Собираем нужную экспертизу для проекта, согласуем план и показываем промежуточные версии.</p><p>Для заказчика процесс остаётся понятным: договор, этапы, согласования и передача результата. После запуска помогаем поддерживать и развивать продукт.</p></div></section><section class="wrap section"><div class="section-heading"><h2>Что вы получаете<br>вместе с разработкой</h2></div>'+steps()+'</section>'+cta())
-page('contacts','Обсудить проект',stage6.contacts(stage2.contacts(intro,S)))
-page('prices','Стоимость услуг',stage6.prices(intro,btn))
-page('case-mu56','Мир Улыбок — сайт детских праздников',stage2.case_mu56(btn))
-page('case-pilotspace','PilotSpace — тренажёр для подготовки пилотов',stage2.case_pilotspace(btn))
-page('approach','Подход к работе',stage2.approach(intro,btn))
+page('solutions','Решения для бизнеса',stage29_portfolio.solutions(stage4.flow_section(compact=True)))
+page('projects','Проекты',stage29_portfolio.projects(projects()))
+page('about','О компании',stage29_company.about())
+page('contacts','Обсудить проект',stage29_company.contacts())
+page('prices','Стоимость услуг',stage29_company.prices(S))
+page('case-mu56','Мир Улыбок — сайт детских праздников',stage29_portfolio.case(stage2.case_mu56(btn),'mu56'))
+page('case-pilotspace','PilotSpace — тренажёр для подготовки пилотов',stage29_portfolio.case(stage2.case_pilotspace(btn),'pilotspace'))
+page('approach','Подход к работе',stage29_company.approach())
 page('consent-draft','Черновик условий обработки',intro('Тестовый режим','Условия обработки<br>тестовой заявки','Черновик draft-2026-10-12. Только для локальной проверки формы; публичный приём обращений не запущен.')+'<section class="wrap section compact draft-consent"><p>Форма запрашивает имя, контакт, направление, описание задачи, бюджет и необязательный адрес сайта. Данные сохраняются в отдельной тестовой базе, чтобы проверить создание заявки и повтор без дублей. Внешние уведомления отключены.</p><p>Используйте вымышленные данные. Не передавайте пароли, платёжные сведения и другие секреты. Контакт и описание не сохраняются в хранилище браузера или аналитике.</p><p>Перед публичным запуском требуется согласовать сведения исполнителя, цели, порядок и срок хранения данных и итоговые документы. Этот черновик не подменяет утверждённую политику.</p><a class="text-link" href="contacts.html">Вернуться к форме →</a></section>')
 print('Generated',len(list(R.glob('*.html'))),'HTML pages')

@@ -1,0 +1,95 @@
+/* Stage29: service pages share the homepage language, without global overrides. */
+.detail29-intro{background:#f8f9fd;border-bottom:1px solid #eceef5}
+.detail29 .breadcrumb{display:flex;flex-wrap:wrap;gap:8px 12px;padding-top:25px;font-size:12px;color:var(--muted)}
+.detail29-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:65px;align-items:center;padding:48px 0 64px}
+.detail29-copy .eyebrow{font-size:11px}
+.detail29-copy h1{font-size:clamp(34px,3.6vw,53px);line-height:1.12;font-weight:600;max-width:680px}
+.detail29-copy>p{font-size:17px;line-height:1.8;color:var(--muted);margin-top:25px;max-width:580px}
+.detail29-actions{display:flex;align-items:center;flex-wrap:wrap;gap:20px 26px;margin-top:28px}
+.detail29-actions>a:not(.btn){font-size:14px;color:var(--purple);padding-block:10px}
+.detail29-actions>a:not(.btn):hover{text-decoration:underline;text-underline-offset:5px}
+.detail29-start{display:flex;flex-wrap:wrap;align-items:baseline;gap:5px 18px;margin-top:30px;border-top:1px solid #e2e5ee;padding-top:20px}
+.detail29-start>span{font-size:12px;color:var(--muted);flex-basis:100%}
+.detail29-start>strong{font-size:20px;letter-spacing:-.025em;font-weight:600}
+.detail29-start>a{font-size:12px;color:var(--purple);text-decoration:underline;text-underline-offset:4px}
+.detail29-visual{min-width:0;position:relative}
+.detail29-visual>img{width:100%;height:240px;object-fit:contain;position:relative;z-index:1;margin:0 auto -15px}
+.detail29-board{padding:26px 28px 25px;background:#fff;border:1px solid #e7e4f3;border-radius:20px;box-shadow:0 18px 45px #25305608}
+.detail29-demo{display:block;font-size:10px;color:var(--muted);letter-spacing:.06em;margin-bottom:11px}
+.detail29-board h2{font-size:20px;line-height:1.3;letter-spacing:-.03em}
+.detail29-route{display:flex;align-items:center;list-style:none;padding:0;margin:22px 0;gap:16px}
+.detail29-route>li{position:relative;flex:1;font-size:11px;line-height:1.4;color:var(--purple);border-bottom:2px solid #ddd6fb;padding-bottom:12px}
+.detail29-route>li:not(:last-child)::after{content:"";position:absolute;right:-10px;bottom:-4px;width:6px;height:6px;border-top:1px solid #9589ba;border-right:1px solid #9589ba;transform:rotate(45deg)}
+.detail29-signals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.detail29-signals b{display:block;font-size:12px;font-weight:500}
+.detail29-signals span{display:block;font-size:11px;color:var(--muted);margin-top:5px;line-height:1.6}
+.detail29-visual--audit .detail29-signals{grid-template-columns:1fr;gap:0}
+.detail29-visual--audit .detail29-signals>div{display:grid;grid-template-columns:100px minmax(0,1fr);gap:14px;padding:8px 0;border-top:1px solid #edf0f5}
+.detail29-visual--audit .detail29-signals span{margin:0}
+.detail29-visual--support .detail29-signals>div{padding-left:12px;border-left:3px solid #d8d3ed}
+.detail29-visual--support .detail29-signals>div:nth-child(2){border-color:var(--purple)}
+.detail29-visual--support .detail29-signals>div:last-child{border-color:#37947e}
+.detail29-visual--redesign .detail29-route>li:first-child{color:var(--muted);border-color:#dce0e8}
+.detail29-visual--redesign .detail29-signals b::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:#8e7be9;margin-right:6px}
+.detail29-visual--seo .detail29-board{border-top:3px solid #b9acf4}
+.detail29-visual--integrations .detail29-route{gap:24px}
+.detail29-visual--integrations .detail29-route>li{border:1px solid #e4def6;border-radius:8px;padding:10px 7px;text-align:center;background:#faf9fe}
+.detail29-visual--integrations .detail29-route>li:not(:last-child)::after{right:-16px;bottom:calc(50% - 3px)}
+.detail29-formats{padding-block:80px}
+.detail29-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:60px;align-items:end;margin-bottom:35px}
+.detail29-heading h2{max-width:650px;font-size:clamp(28px,2.8vw,40px)}
+.detail29-heading .eyebrow{font-size:11px}
+.detail29-heading>p{font-size:15px;color:var(--muted);line-height:1.8}
+.detail29-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:65px}
+.detail29-options article{display:flex;gap:22px;padding:26px 0;border-top:1px solid #e3e6ef}
+.detail29-number{font-size:12px;color:#a49bbd;padding-top:5px}
+.detail29-options h3{font-size:22px;line-height:1.3}
+.detail29-options p{font-size:15px;line-height:1.75;color:var(--muted);margin-top:11px;max-width:460px}
+.detail29-scope{background:#f7f8fc;padding-block:65px}
+.detail29-scope-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:80px;align-items:start}
+.detail29-scope-grid h2{font-size:clamp(28px,3vw,40px)}
+.detail29-scope-grid>div>p{font-size:15px;color:var(--muted);margin-top:20px;max-width:500px}
+.detail29-deliver{list-style:none;padding:0;margin:28px 0 0;counter-reset:deliver}
+.detail29-deliver>li{counter-increment:deliver;display:flex;gap:14px;padding:12px 0;border-top:1px solid #e2e5ee;font-size:14px}
+.detail29-deliver>li::before{content:counter(deliver,decimal-leading-zero);font-size:11px;color:#9185b6;padding-top:3px;flex-shrink:0}
+.detail29-budget{padding:32px;border-radius:18px;background:white;border:1px solid #e5e1f1;box-shadow:0 16px 40px #26345905}
+.detail29-budget .eyebrow{font-size:11px}
+.detail29-budget h3{font-size:29px;line-height:1.25}
+.detail29-budget p{font-size:15px;line-height:1.85;color:var(--muted);margin-top:20px}
+.detail29-budget .btn{margin-top:25px;white-space:normal}
+.detail29-budget-note{display:block;font-size:12px;line-height:1.7;color:var(--muted);margin-top:16px}
+.detail29-faq{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:70px;padding-block:75px}
+.detail29-faq h2{font-size:36px}
+.detail29-faq details{border-bottom:1px solid #e4e6ef}
+.detail29-faq summary{display:flex;justify-content:space-between;align-items:center;gap:18px;list-style:none;padding:21px 0;cursor:pointer;font-size:17px;font-weight:500}
+.detail29-faq summary::-webkit-details-marker{display:none}
+.detail29-faq summary span{color:var(--purple);font-weight:400;font-size:23px;flex-shrink:0}
+.detail29-faq details[open] summary span{transform:rotate(45deg)}
+.detail29-faq details p{font-size:15px;color:var(--muted);line-height:1.8;padding-bottom:22px}
+@media(max-width:1000px){
+ .detail29-hero{gap:30px}.detail29-copy h1{font-size:38px}.detail29-board{padding:22px}.detail29-visual>img{height:210px}
+ .detail29-heading,.detail29-scope-grid,.detail29-faq{gap:35px}.detail29-options{column-gap:35px}
+ .detail29-signals{gap:10px}.detail29-budget{padding:26px}
+}
+@media(max-width:800px){
+ .detail29-hero{grid-template-columns:1fr;padding-top:35px;gap:25px}.detail29-copy{max-width:650px}.detail29-copy h1{font-size:clamp(33px,5.5vw,45px)}
+ .detail29-visual{max-width:540px;width:100%;justify-self:center}.detail29-visual>img{height:240px}
+ .detail29-heading{grid-template-columns:1fr;gap:20px}.detail29-heading>p{max-width:640px}
+ .detail29-scope-grid{grid-template-columns:1fr;gap:30px}.detail29-budget{max-width:650px}
+ .detail29-faq{grid-template-columns:1fr;gap:20px}
+}
+@media(max-width:540px){
+ .detail29 .breadcrumb{font-size:10px;gap:5px 8px;padding-top:18px}.detail29-hero{padding-bottom:38px}
+ .detail29-copy>p{font-size:16px;line-height:1.75;margin-top:20px}.detail29-copy .eyebrow{font-size:10px;letter-spacing:.08em}
+ .detail29-actions{gap:10px 20px}.detail29-actions .btn{font-size:14px;padding:15px 19px}
+ .detail29-start{gap:5px 12px}.detail29-start strong{font-size:19px}
+ .detail29-board{padding:20px 17px;border-radius:15px}.detail29-board h2{font-size:20px}
+ .detail29-visual>img{height:200px}.detail29-route{gap:13px}.detail29-route>li{font-size:10px}
+ .detail29-signals{gap:10px}.detail29-signals b{font-size:11px}.detail29-signals span{font-size:10px}
+ .detail29-visual--audit .detail29-signals>div{grid-template-columns:80px minmax(0,1fr);gap:8px}
+ .detail29-options{grid-template-columns:1fr}.detail29-options article{padding:22px 0;gap:16px}
+ .detail29-options h3{font-size:21px}.detail29-options p{font-size:14px}
+ .detail29-formats{padding-block:48px}.detail29-scope{padding-block:42px}.detail29-faq{padding-block:48px}
+ .detail29-budget{padding:24px 20px}.detail29-budget h3{font-size:26px}.detail29-budget p{font-size:14px}
+ .detail29-faq summary{font-size:16px}.detail29-faq h2{font-size:30px}.detail29-faq details p{font-size:14px}
+}

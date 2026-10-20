@@ -1,0 +1,75 @@
+/* Stage 29: product service pages. Scoped; shared navigation and flow are untouched. */
+.product29{--p29-ink:#19213b;--p29-muted:#606b82;--p29-violet:#6347ed;color:var(--p29-ink)}
+.product29-intro{background:#f8f9fd;padding:26px 0 52px}
+.product29-hero{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:36px;padding-top:42px}
+.product29-copy h1{font-size:clamp(40px,4.7vw,72px);line-height:1.06;letter-spacing:-.045em;max-width:850px;margin:0 0 25px}
+.product29-copy>p:not(.product29-start){font-size:clamp(18px,1.6vw,22px);line-height:1.6;color:var(--p29-muted);max-width:610px}
+.product29-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin:30px 0}
+.product29-link{color:var(--p29-violet);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:5px;transition:text-decoration-color .2s,color .2s;font-weight:600}
+.product29-link:hover,.product29-link:focus-visible{text-decoration-color:currentColor;color:#4430ae}
+.product29-start{font-size:18px;font-weight:650;line-height:1.5;margin:0}
+.product29-start span{display:block;font-size:13px;color:var(--p29-muted);font-weight:400;margin-top:5px}
+.product29-art{margin:0;min-width:0;animation:product29-enter .7s both}
+.product29-art img{display:block;width:100%;height:auto;object-fit:contain}
+.product29-scenarios,.product29-platform,.product29-change,.product29-choice{padding-top:90px;padding-bottom:90px}
+.product29-section-title{max-width:820px;margin-bottom:38px}
+.product29 h2{font-size:clamp(32px,3.4vw,52px);line-height:1.13;letter-spacing:-.035em}
+.product29 h3{font-size:clamp(23px,2vw,30px);line-height:1.2;letter-spacing:-.025em}
+.product29 p{line-height:1.65}
+.product29-section-title>p,.product29-scenario-feature>p,.product29-scenario-notes p,.product29-case-copy p,.product29-platform-options p,.product29-change-list p,.product29-choice p,.product29-budget p{color:var(--p29-muted);font-size:17px}
+.product29-scenario-layout{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:center}
+.product29-scenario-feature{min-width:0}
+.product29-scenario-feature h3{margin:16px 0}
+.product29-appointment{background:#f3f1fc;border-radius:24px;padding:26px 36px 34px;margin-bottom:30px;overflow:hidden}
+.product29-demo-label{display:block;font-size:12px;letter-spacing:.03em;color:#6d6483;margin-bottom:22px}
+.product29-appointment-card{background:white;padding:28px;border-radius:18px;box-shadow:0 16px 35px #3424720c;max-width:420px;margin:auto;transform:rotate(-2deg);transition:transform .3s}
+.product29-appointment:hover .product29-appointment-card{transform:rotate(0)}
+.product29-appointment-card>span{font-size:13px;color:#68748d}
+.product29-appointment-card>strong{display:block;font-size:25px;line-height:1.2;letter-spacing:-.03em;margin:13px 0 22px}
+.product29-time{display:flex;gap:9px}
+.product29-time i{font-style:normal;border:1px solid #e5e0f3;border-radius:10px;padding:10px 13px;font-size:14px}
+.product29-time .is-selected{background:var(--p29-violet);color:#fff;border-color:var(--p29-violet)}
+.product29-confirmation{margin-top:22px;font-size:12px;line-height:1.5;color:#69758d;display:flex;align-items:center;gap:10px}
+.product29-confirmation span{display:grid;place-items:center;flex-shrink:0;width:25px;height:25px;background:#ece8ff;color:var(--p29-violet);border-radius:50%}
+.product29-scenario-notes{display:grid;gap:44px}
+.product29-scenario-notes article{padding-left:24px;border-left:2px solid #e4defb}
+.product29-step-label{font-size:13px;color:var(--p29-violet)}
+.product29-scenario-notes h3{margin:12px 0}
+.product29-case{background:#f5f6fb;padding:65px 0}
+.product29-case-layout{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:60px}
+.product29-case-copy ul{list-style:none;padding:0;margin:25px 0;display:grid;gap:12px;color:var(--p29-muted);font-size:15px}
+.product29-case-copy li{padding-left:18px;position:relative}
+.product29-case-copy li:before{content:"";position:absolute;left:0;top:.6em;width:5px;height:5px;background:var(--p29-violet);border-radius:50%}
+.product29-real-screen{display:block;background:#fff;overflow:hidden;border:1px solid #e1e2ed;border-radius:16px;box-shadow:0 18px 50px #1c25500a;color:var(--p29-muted)}
+.product29-real-screen img{display:block;width:100%;height:auto;object-fit:contain;transition:opacity .2s}
+.product29-real-screen:hover img{opacity:.92}
+.product29-real-screen>span{display:block;padding:13px 20px;font-size:12px;border-top:1px solid #e9eaf1}
+.product29-real-screen:focus-visible{outline:3px solid var(--p29-violet);outline-offset:4px}
+.product29-platform{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px}
+.product29-platform-options{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.product29-device{display:block;position:relative;margin-bottom:25px;color:var(--p29-violet);border:2px solid currentColor;background:#f6f4ff}
+.product29-device-browser{width:80px;height:56px;border-radius:8px}
+.product29-device-browser:after{content:"";position:absolute;left:0;right:0;top:12px;border-top:2px solid currentColor}
+.product29-device-phone{width:34px;height:56px;border-radius:9px}
+.product29-device-phone:after{content:"";position:absolute;bottom:5px;width:10px;left:10px;border-top:2px solid currentColor}
+.product29-change{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.product29-change-list{display:grid;gap:30px}
+.product29-change-list article{display:flex;gap:20px}
+.product29-change-list h3{font-size:24px;margin:0 0 8px}
+.product29-change-list p{margin:0}
+.product29-change-mark{display:grid;place-items:center;width:46px;height:46px;flex-shrink:0;background:#f1edff;border-radius:15px;color:var(--p29-violet);font-size:13px}
+.product29-choice{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:80px}
+.product29-choice-panel{background:#f4f2fc;padding:38px 42px;border-radius:24px}
+.product29-choice-panel>span{color:var(--p29-violet);font-size:13px}
+.product29-choice-panel h3{font-size:clamp(28px,2.8vw,39px);margin:20px 0}
+.product29-budget{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding-top:60px;padding-bottom:70px;border-top:1px solid #e7e8f0}
+.product29-budget h2{margin:18px 0}
+.product29-budget-detail{padding:30px 34px;border-radius:22px;background:#f7f7fc}
+.product29-budget-detail>strong{display:block;font-size:clamp(23px,2.3vw,34px);line-height:1.25;letter-spacing:-.03em}
+.product29-budget-detail>small{display:block;margin-top:20px;font-size:12px;color:var(--p29-muted);line-height:1.6}
+.product29-faq{padding-top:70px;padding-bottom:70px}
+@keyframes product29-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(max-width:1000px){.product29-hero{gap:16px}.product29-copy h1{font-size:48px}.product29-scenario-layout,.product29-case-layout,.product29-platform,.product29-choice,.product29-change,.product29-budget{gap:34px}.product29-actions{gap:17px}.product29-appointment{padding:24px}.product29-platform-options{gap:22px}}
+@media(max-width:760px){.product29-hero,.product29-scenario-layout,.product29-case-layout,.product29-platform,.product29-choice,.product29-change,.product29-budget{grid-template-columns:1fr}.product29-intro{padding:18px 0 35px}.product29-hero{padding-top:24px}.product29-copy h1{font-size:clamp(36px,7.5vw,52px)}.product29-art{max-width:530px;margin:12px auto 0;width:100%}.product29-scenarios,.product29-platform,.product29-choice,.product29-change{padding-top:54px;padding-bottom:54px}.product29-section-title{margin-bottom:24px}.product29-case{padding:45px 0}.product29-case-layout{gap:28px}.product29-platform{gap:20px}.product29-budget{padding-top:40px;padding-bottom:45px}.product29-choice-panel{padding:28px}.product29-faq{padding-top:45px;padding-bottom:45px}}
+@media(max-width:420px){.product29-actions{align-items:flex-start;flex-direction:column}.product29-appointment{padding:18px 13px 22px}.product29-appointment-card{padding:21px 15px}.product29-time{gap:6px}.product29-time i{padding:9px 12px}.product29-platform-options{grid-template-columns:1fr;gap:28px}.product29-platform-options article{position:relative;padding-left:65px}.product29-device{position:absolute;left:0;top:0;transform:scale(.7);transform-origin:left top}.product29-platform-options h3{margin-top:0}.product29-budget-detail{padding:25px 22px}.product29-change-list article{gap:14px}.product29-change-mark{width:36px;height:36px;border-radius:12px}.product29-change-list h3{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.product29-art{animation:none}.product29-appointment-card,.product29-real-screen img,.product29-link{transition:none}.product29-appointment:hover .product29-appointment-card{transform:rotate(-2deg)}}

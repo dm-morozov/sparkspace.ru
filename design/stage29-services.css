@@ -1,0 +1,54 @@
+/* Stage29 directory. Existing typography and cutout artwork remain the brand. */
+.services29{background:#f8f9fd;padding-bottom:8px}
+.services29-intro{padding-top:28px;padding-bottom:40px}
+.services29-intro .breadcrumb{margin-bottom:30px}
+.services29-intro h1{max-width:850px;font-size:clamp(38px,4.6vw,64px);line-height:1.08;letter-spacing:-.045em}
+.services29-intro>p{max-width:650px;margin-top:22px;color:var(--muted);font-size:17px;line-height:1.7}
+.services29-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.services29-group{min-width:0;background:#fff;border:1px solid #e3e1ed;border-radius:20px;padding:32px}
+.services29-group-intro{display:flex;flex-direction:column}
+.services29-group h2{font-size:clamp(25px,2.3vw,32px);line-height:1.2;letter-spacing:-.025em}
+.services29-group-intro p{font-size:15px;line-height:1.7;color:var(--muted);max-width:380px;margin-top:14px}
+.services29-group-intro img{display:block;width:100%;height:190px;object-fit:contain;margin:18px auto;max-width:400px}
+.services29-launch{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:42px;align-items:center}
+.services29-launch .services29-group-intro img{height:235px;max-width:420px;margin:8px auto 0}
+.services29-links{list-style:none;margin:0;padding:0}
+.services29-links li+li{border-top:1px solid #e9e8ef}
+.services29-link{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:23px 10px;border-radius:8px;min-width:0;transition:background .2s,color .2s}
+.services29-link-copy{min-width:0;display:block}
+.services29-link-copy strong{display:block;font-size:18px;font-weight:600;line-height:1.35;letter-spacing:-.015em}
+.services29-link-copy>span{display:block;max-width:350px;font-size:13px;line-height:1.65;color:var(--muted);margin-top:7px}
+.services29-link-price{flex-shrink:0;max-width:140px;text-align:right;font-size:13px;color:var(--purple);line-height:1.6}
+.services29-link:hover{background:#f6f4fc;color:var(--purple)}
+.services29-link:focus-visible{outline:2px solid var(--purple);outline-offset:2px;background:#f6f4fc}
+.services29-link:active{background:#eee9fa}
+.services29-process .services29-link,.services29-growth .services29-link{align-items:flex-start}
+.services29-process .services29-link-price,.services29-growth .services29-link-price{max-width:112px}
+.services29-note{padding-top:26px;padding-bottom:48px;display:flex;align-items:flex-start;justify-content:space-between;gap:35px}
+.services29-note p{max-width:680px;color:var(--muted);font-size:13px;line-height:1.7}
+.services29-note a{display:inline-flex;align-items:center;min-height:44px;font-size:14px;color:var(--purple);text-decoration:underline;text-underline-offset:5px;flex-shrink:0}
+@media(max-width:1000px){
+ .services29-group{padding:26px}
+ .services29-launch{gap:24px}
+ .services29-link{gap:12px;padding:20px 5px}
+ .services29-link-copy strong{font-size:17px}
+ .services29-process .services29-link,.services29-growth .services29-link{flex-direction:column;gap:7px}
+ .services29-process .services29-link-price,.services29-growth .services29-link-price{text-align:left;max-width:none}
+ .services29-note{flex-direction:column;gap:8px}
+}
+@media(max-width:700px){
+ .services29-intro{padding-top:22px;padding-bottom:28px}
+ .services29-intro .breadcrumb{margin-bottom:24px}
+ .services29-intro>p{font-size:15px;margin-top:18px}
+ .services29-directory{grid-template-columns:minmax(0,1fr);gap:18px}
+ .services29-launch{display:block;grid-column:auto}
+ .services29-group{padding:24px 20px;border-radius:16px}
+ .services29-group-intro img,.services29-launch .services29-group-intro img{height:185px;margin:12px auto}
+ .services29-link{flex-direction:column;align-items:flex-start;gap:7px;padding:18px 2px}
+ .services29-link-price{text-align:left;max-width:none}
+ .services29-link-copy>span{max-width:none}
+ .services29-group-intro p{font-size:14px}
+ .services29-note{padding-bottom:32px}
+ .services29-note a{font-size:13px;flex-shrink:1}
+}
+@media(prefers-reduced-motion:reduce){.services29-link{transition:none}}
