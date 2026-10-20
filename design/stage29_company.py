@@ -84,6 +84,17 @@ def contacts():
     body += (
         '<section class="wrap company29-contacts"><div><h2>Как вам удобнее?</h2>'
         + stage6.links() +
+        '<section class="contact30-context" data-contact-context hidden aria-labelledby="contact30-title">'
+        '<span class="eyebrow">ВАШЕ ОБРАЩЕНИЕ</span><h3 id="contact30-title">Подготовим короткое сообщение</h3>'
+        '<p class="contact30-selection" data-contact-selection></p>'
+        '<label for="contact30-message">Текст для мессенджера</label>'
+        '<textarea id="contact30-message" data-contact-message rows="5" maxlength="2000" '
+        'aria-describedby="contact30-help" spellcheck="true"></textarea>'
+        '<p id="contact30-help">Дополните текст, скопируйте и вставьте в Telegram или MAX. '
+        'Сообщение отправите сами в выбранном приложении.</p>'
+        '<div class="contact30-copy-row"><button class="btn primary" type="button" data-contact-copy>'
+        'Скопировать сообщение</button><span data-contact-status role="status" aria-live="polite" '
+        'aria-atomic="true"></span></div></section>'
         '</div><aside><h2>Чтобы начать разговор</h2>'
         '<ol><li>Чем занимается ваш бизнес?</li><li>Что хотите запустить или улучшить?</li>'
         '<li>Как сейчас решается эта задача?</li></ol>'
@@ -114,7 +125,9 @@ def prices(S):
         body += (
             f'<article><h3>{escape(item[1])}</h3><strong class="company29-price">{escape(item[4])}</strong>'
             f'<p>{escape(item[2])}</p><details><summary>Что входит в стоимость</summary>'
-            f'<p>{escape(item[7])}</p></details><a href="{slug}.html">Подробнее об услуге</a></article>'
+            f'<p>{escape(item[7])}</p></details><div class="contact30-price-actions">'
+            f'<a class="btn primary" href="contacts.html?service={slug}">Обсудить этот вариант</a>'
+            f'<a href="{slug}.html">Подробнее об услуге</a></div></article>'
         )
     body += (
         '</div><div class="company29-price-conditions">'

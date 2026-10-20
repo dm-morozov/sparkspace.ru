@@ -1083,3 +1083,170 @@ footer .public-contact-compact>a{display:flex!important;align-items:center;margi
  .portfolio29-projects .project-image img,.solutions29-links>a{transition:none}
  .portfolio29-projects .project:hover .project-image img{transform:none}
 }
+
+/* Integrated stage30-mobile-process.css */
+/* Mobile process navigation: visible names, generous targets, stable connectors. */
+@media(max-width:800px){
+ .flow-showcase.flow-enhanced .flow-tabs a{
+  min-height:44px;
+  min-width:44px;
+  justify-content:center;
+ }
+ .flow-showcase.flow-enhanced .flow-step{
+  min-height:44px;
+  min-width:44px;
+ }
+ .flow-showcase.flow-enhanced .flow-step strong{
+  position:static;
+  width:auto;
+  height:auto;
+  margin:10px 0 0;
+  padding:0;
+  overflow:visible;
+  clip:auto;
+  clip-path:none;
+  white-space:normal;
+  overflow-wrap:normal;
+  word-break:normal;
+  font-size:12px;
+  line-height:1.4;
+ }
+ .flow-showcase.flow-enhanced .flow-node{margin:0}
+ .flow-showcase.flow-enhanced .flow-tabs a:focus-visible,
+ .flow-showcase.flow-enhanced .flow-step:focus-visible,
+ .flow-showcase.flow-enhanced .flow-browse button:focus-visible{
+  outline:2px solid var(--purple);
+  outline-offset:3px;
+ }
+ .flow-showcase.flow-enhanced .flow-browse button{
+  min-height:44px;
+  min-width:44px;
+  padding:10px 12px;
+  line-height:1.5;
+ }
+}
+@media(min-width:541px) and (max-width:800px){
+ .flow-showcase.flow-enhanced .flow-path{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:8px;
+ }
+ .flow-showcase.flow-enhanced .flow-step{padding:10px 0;min-height:104px}
+ .flow-showcase.flow-enhanced .flow-node{width:44px;height:44px}
+ .flow-showcase.flow-enhanced .flow-step strong{font-size:11px}
+ .flow-showcase.flow-enhanced .flow-connector{
+  top:32px;
+  left:calc(50% + 27px);
+  right:auto;
+  width:calc(100% - 46px);
+  height:1px;
+ }
+ .flow-showcase.flow-enhanced .flow-connector::before{
+  top:0;right:5px;bottom:auto;left:0;
+  width:auto;height:0;
+  border:0;border-top:1px solid #b8afcf;
+ }
+ .flow-showcase.flow-enhanced .flow-connector::after{
+  top:-3px;right:5px;bottom:auto;left:auto;
+  width:6px;height:6px;
+  border:0;border-top:1px solid #a49abd;border-right:1px solid #a49abd;
+  transform:rotate(45deg);
+ }
+}
+@media(max-width:540px){
+ .flow-showcase.flow-enhanced .flow-path{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:12px;
+  padding:3px;
+ }
+ .flow-showcase.flow-enhanced .flow-path>li{margin:0;min-width:0}
+ .flow-showcase.flow-enhanced .flow-step{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:flex-start;
+  gap:15px;
+  width:100%;
+  min-height:52px;
+  height:auto;
+  padding:4px 8px 4px 0;
+  text-align:left;
+  border-radius:12px;
+ }
+ .flow-showcase.flow-enhanced .flow-node{
+  width:44px;
+  height:44px;
+  margin:0;
+  flex:0 0 44px;
+  border-radius:12px;
+ }
+ .flow-showcase.flow-enhanced .flow-step strong{
+  margin:0;
+  font-size:14px;
+  line-height:1.4;
+ }
+ .flow-showcase.flow-enhanced .flow-step[aria-pressed=true] .flow-node{transform:none}
+ .flow-showcase.flow-enhanced .flow-connector{
+  top:52px;
+  left:21px;
+  right:auto;
+  bottom:auto;
+  width:1px;
+  height:12px;
+  transform:none;
+ }
+ .flow-showcase.flow-enhanced .flow-connector::before{
+  top:0;right:auto;bottom:2px;left:0;
+  width:0;height:auto;
+  border:0;border-left:1px solid #b8afcf;
+ }
+ .flow-showcase.flow-enhanced .flow-connector::after{
+  top:auto;right:auto;bottom:2px;left:-3px;
+  width:6px;height:6px;
+  border:0;border-right:1px solid #a49abd;border-bottom:1px solid #a49abd;
+  transform:rotate(45deg);
+ }
+ .flow-showcase.flow-enhanced .flow-browse{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);
+  gap:8px;
+  margin-top:18px;
+  padding-top:14px;
+ }
+ .flow-showcase.flow-enhanced .flow-browse>span{
+  grid-column:1/-1;
+  margin:0 0 4px;
+ }
+ .flow-showcase.flow-enhanced .flow-browse button{
+  width:100%;
+  padding:10px 8px;
+  text-align:center;
+  white-space:normal;
+ }
+ .flow-showcase.flow-enhanced .flow-browse [data-flow-start]{grid-column:1/-1}
+ .flow-showcase.flow-enhanced .flow-browse [data-flow-next]{background:#f0ecff}
+ .flow-showcase.flow-enhanced .flow-browse button:disabled{opacity:.5}
+}
+
+/* Integrated stage30-contact-context.css */
+/* Scoped contact handoff; the direct channels remain the primary contact method. */
+.contact30-context{margin-top:28px;padding:25px;border:1px solid #e3e1ed;border-radius:18px;background:#f8f9fd}
+.contact30-context[hidden]{display:none}
+.contact30-context .eyebrow{font-size:11px}
+.contact30-context h3{margin-top:12px}
+.contact30-selection{font-size:14px;line-height:1.6;color:var(--muted);margin:12px 0 20px}
+.contact30-context label{display:block;font-size:14px;font-weight:600;margin-bottom:10px}
+.contact30-context textarea{display:block;width:100%;min-height:150px;resize:vertical;border:1px solid #d9d5e8;border-radius:12px;background:#fff;padding:15px;font:inherit;font-size:15px;line-height:1.6;color:var(--ink);box-sizing:border-box}
+.contact30-context textarea:focus-visible{outline:2px solid var(--purple);outline-offset:3px}
+.contact30-context #contact30-help{font-size:12px;line-height:1.7;color:var(--muted);margin:12px 0 18px}
+.contact30-copy-row{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.contact30-copy-row .btn{font:inherit;font-size:14px;cursor:pointer;border:0;white-space:normal;text-align:left}
+.contact30-copy-row .btn:disabled{opacity:.65;cursor:wait}
+.contact30-copy-row [role=status]{font-size:13px;line-height:1.6;color:var(--muted)}
+.contact30-copy-row [role=status]:empty{display:none}
+.contact30-price-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:20px}
+.contact30-price-actions .btn{font-size:14px;min-height:44px;white-space:normal}
+.contact30-price-actions>a:not(.btn){display:inline-flex;align-items:center;min-height:44px;font-size:13px;color:var(--purple);text-underline-offset:4px}
+.contact30-price-actions>a:not(.btn):hover{text-decoration:underline}
+@media(max-width:440px){.contact30-context{padding:20px}.contact30-copy-row .btn{padding:14px 18px}.contact30-price-actions{align-items:flex-start;flex-direction:column}}
