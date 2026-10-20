@@ -1250,3 +1250,54 @@ footer .public-contact-compact>a{display:flex!important;align-items:center;margi
 .contact30-price-actions>a:not(.btn){display:inline-flex;align-items:center;min-height:44px;font-size:13px;color:var(--purple);text-underline-offset:4px}
 .contact30-price-actions>a:not(.btn):hover{text-decoration:underline}
 @media(max-width:440px){.contact30-context{padding:20px}.contact30-copy-row .btn{padding:14px 18px}.contact30-price-actions{align-items:flex-start;flex-direction:column}}
+
+/* Integrated stage31-commercial.css */
+/* Stage31: make deliverables and real evidence visible without more sections. */
+.commercial31-prices .commercial31-result{display:block;font-size:13px;line-height:1.6;color:var(--ink);margin-top:10px;padding-left:12px;border-left:2px solid #bcaaf0}
+.commercial31-site-formats{width:100%;display:grid;gap:12px;margin:20px 0 0}
+.commercial31-site-formats>div{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.commercial31-site-formats dt{font-size:14px;line-height:1.6}
+.commercial31-site-formats dd{font-size:17px;font-weight:600;line-height:1.6;color:var(--purple);margin:0;text-align:right;white-space:nowrap}
+.company29 .commercial31-evidence{display:block;padding-top:35px}
+.commercial31-evidence>div:first-child{max-width:720px}
+.commercial31-evidence>div:first-child p{margin-top:16px}
+.commercial31-case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:30px}
+.company29 .commercial31-case{display:flex;flex-direction:column;align-items:stretch;margin:0;min-width:0;border:1px solid #e3e1ed;border-radius:16px;background:#fff;overflow:hidden;color:inherit;text-decoration:none;transition:border-color .2s,box-shadow .2s}
+.commercial31-case>img{width:100%;height:auto;aspect-ratio:1265/712;object-fit:contain;display:block;border-bottom:1px solid #e9e7ef}
+.commercial31-case-copy{display:flex;flex-direction:column;gap:12px;padding:24px;flex:1}
+.commercial31-case-copy>strong{font-size:23px;line-height:1.3;letter-spacing:-.025em}
+.commercial31-case-copy>span:not(.commercial31-case-action){font-size:15px;line-height:1.75;color:var(--muted)}
+.commercial31-case-action{display:flex;align-items:center;min-height:44px;margin-top:auto;font-size:14px;color:var(--purple);text-decoration:underline;text-underline-offset:5px}
+.company29 .commercial31-case:hover{border-color:#bcaaf0;box-shadow:0 8px 24px #35246a0a}
+.commercial31-case:focus-visible{outline:2px solid var(--purple);outline-offset:4px}
+@media(max-width:700px){
+ .commercial31-case-grid{grid-template-columns:minmax(0,1fr);gap:22px}
+ .commercial31-case-copy{padding:20px}
+ .commercial31-case-copy>strong{font-size:21px}
+ .commercial31-case-copy>span:not(.commercial31-case-action){font-size:14px}
+ .commercial31-site-formats>div{gap:8px}
+ .commercial31-site-formats dt{font-size:13px}
+ .commercial31-site-formats dd{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){.company29 .commercial31-case{transition:none}}
+
+/* Integrated stage31-interaction.css */
+/* Real project previews sit in overflow-hidden cards: keep keyboard focus inside. */
+.project-previews .work-art:focus-visible {
+  outline:3px solid var(--purple);
+  outline-offset:-4px;
+}
+
+/* Integrated stage31-services-polish.css */
+/* Stage31: a real integration-related project and direct access to product scope. */
+.service31-proof{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:50px;align-items:center;padding-bottom:70px}
+.service31-proof-image{display:block;border:1px solid #e3e1ed;border-radius:16px;overflow:hidden;background:#fff}
+.service31-proof-image img{display:block;width:100%;height:auto;object-fit:contain}
+.service31-proof-image:focus-visible{outline:3px solid var(--purple);outline-offset:4px}
+.service31-proof h2{font-size:clamp(28px,2.8vw,40px);line-height:1.15;letter-spacing:-.03em}
+.service31-proof p{font-size:16px;line-height:1.75;color:var(--muted);margin:20px 0 12px}
+.service31-proof-link,.service31-budget-link{display:inline-flex;align-items:center;min-height:44px;color:var(--purple);text-decoration:underline;text-underline-offset:5px;font-size:14px;font-weight:500}
+.service31-proof-link:hover,.service31-budget-link:hover{text-decoration-thickness:2px}
+.service31-proof small{display:block;font-size:12px;line-height:1.6;color:var(--muted);margin-top:12px}
+.product29-start .service31-budget-link{margin-top:4px}
+@media(max-width:800px){.service31-proof{grid-template-columns:minmax(0,1fr);gap:26px;padding-bottom:45px}.service31-proof>div{max-width:620px}.service31-proof-image{max-width:680px}.service31-proof p{font-size:15px}}

@@ -39,14 +39,23 @@ def about():
     ]:
         body += f'<article><h3>{title}</h3><p>{text}</p></article>'
     body += (
-        '</section><section class="wrap company29-evidence">'
+        '</section><section class="wrap company29-evidence commercial31-evidence">'
         '<div><h2>Наш подход можно посмотреть в работе</h2>'
-        '<p>Сайт собственного бизнеса «Мир Улыбок» и тренажёр PilotSpace: '
-        'разные задачи, реальные интерфейсы и понятные сценарии.</p>'
-        '<a href="projects.html">Посмотреть проекты</a></div>'
-        '<a class="company29-screen" href="case-mu56.html" aria-label="Открыть кейс Мир Улыбок">'
+        '<p>Два разных проекта. Посмотрите, какую задачу решает каждый.</p></div>'
+        '<div class="commercial31-case-grid">'
+        '<a class="commercial31-case" href="case-mu56.html">'
         '<img src="assets/mu56-home-desktop.jpg" loading="lazy" width="1265" height="712" '
-        'alt="Настоящая главная страница сайта Мир Улыбок"></a></section></div>'
+        'alt="Настоящая главная страница сайта Мир Улыбок">'
+        '<span class="commercial31-case-copy"><strong>Мир Улыбок</strong>'
+        '<span>Собственный бизнес: сайт с нуля, фотографии, оптимизация и Telegram-бот.</span>'
+        '<span class="commercial31-case-action">Посмотреть кейс</span></span></a>'
+        '<a class="commercial31-case" href="case-pilotspace.html">'
+        '<img src="assets/pilotspace-quiz-desktop.jpg" loading="lazy" width="1265" height="712" '
+        'alt="Настоящий экран тренировки PilotSpace с вопросом и вариантами ответа">'
+        '<span class="commercial31-case-copy"><strong>PilotSpace</strong>'
+        '<span>По запросу пилотов из Узбекистана: тренировки по темам и работа над ошибками.</span>'
+        '<span class="commercial31-case-action">Посмотреть кейс</span></span></a>'
+        '</div></section></div>'
     )
     return body + stage25_enquiry.enquiry()
 
@@ -108,6 +117,16 @@ def contacts():
 
 def prices(S):
     lookup = {item[0]: item for item in S}
+    # A starting price names its deliverable, not an entire product it cannot buy.
+    results = {
+        'applications': 'Результат: сценарий и план разработки',
+        'automation': 'Результат: рабочая версия одного процесса',
+        'integrations': 'Результат: один сценарий передачи данных',
+        'redesign': 'Объём и стоимость после разбора сайта',
+        'seo': 'Результат: согласованные работы за месяц',
+        'audit': 'Результат: найденные проблемы и приоритеты',
+        'support': 'Результат: согласованный пакет доработок',
+    }
     body = intro(
         'Стоимость', 'Начните с нужного.<br>Развивайте поэтапно.',
         'Выберите первый результат. Состав работ и стоимость фиксируем до начала этапа, '
@@ -118,12 +137,22 @@ def prices(S):
         '<section class="wrap company29-prices"><h2>Ориентиры по направлениям</h2>'
         '<p class="company29-price-lead">У каждой стартовой цены есть границы. '
         'Раскройте состав работ, чтобы сравнить подходящие варианты.</p>'
-        '<div class="company29-price-grid">'
+        '<div class="company29-price-grid commercial31-prices">'
     )
     for slug in ['websites', 'applications', 'automation', 'integrations', 'redesign', 'seo', 'audit', 'support']:
         item = lookup[slug]
+        price = (
+            '<dl class="commercial31-site-formats">'
+            f'<div><dt>Лендинг</dt><dd>{escape(item[4])}</dd></div>'
+            '<div><dt>Сайт компании</dt><dd>от 50 000 ₽</dd></div>'
+            '<div><dt>Интернет-магазин</dt><dd>По смете</dd></div>'
+            '</dl>'
+        ) if slug == 'websites' else (
+            f'<strong class="company29-price">{escape(item[4])}</strong>'
+            f'<span class="commercial31-result">{escape(results[slug])}</span>'
+        )
         body += (
-            f'<article><h3>{escape(item[1])}</h3><strong class="company29-price">{escape(item[4])}</strong>'
+            f'<article><h3>{escape(item[1])}</h3>{price}'
             f'<p>{escape(item[2])}</p><details><summary>Что входит в стоимость</summary>'
             f'<p>{escape(item[7])}</p></details><div class="contact30-price-actions">'
             f'<a class="btn primary" href="contacts.html?service={slug}">Обсудить этот вариант</a>'

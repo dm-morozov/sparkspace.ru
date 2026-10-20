@@ -1,0 +1,5 @@
+/* Real project previews sit in overflow-hidden cards: keep keyboard focus inside. */
+.project-previews .work-art:focus-visible {
+  outline:3px solid var(--purple);
+  outline-offset:-4px;
+}

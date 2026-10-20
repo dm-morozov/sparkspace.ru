@@ -12,7 +12,7 @@ def _hero(s, title, intro, image, alt, anchor, secondary):
 <nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span aria-hidden="true">/</span><a href="services.html">Услуги</a><span aria-hidden="true">/</span><span aria-current="page">{escape(s[1])}</span></nav>
 <div class="product29-hero"><div class="product29-copy"><h1>{title}</h1><p>{intro}</p>
 <div class="product29-actions"><a class="btn primary" href="contacts.html?service={slug}">Обсудить задачу</a><a class="product29-link" href="#{anchor}">{secondary}</a></div>
-<p class="product29-start">{escape(s[4])}<span>Состав и этапы согласуем до начала работы</span></p></div>
+<div class="product29-start">{escape(s[4])}<span>Состав и этапы согласуем до начала работы</span><a class="service31-budget-link" href="#product29-budget">Состав и границы этого этапа</a></div></div>
 <figure class="product29-art"><img src="assets/{image}" width="960" height="640" fetchpriority="high" decoding="async" alt="{alt}"></figure></div></div></section>'''
 
 
