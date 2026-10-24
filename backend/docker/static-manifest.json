@@ -67,5 +67,9 @@
   "assets/fonts/golos-text-v7-cyrillic.woff2",
   "assets/fonts/golos-text-v7-latin-ext.woff2",
   "assets/fonts/golos-text-v7-latin.woff2",
-  "assets/fonts/OFL.txt"
+  "assets/fonts/OFL.txt",
+  "assets/stage36-auto.png",
+  "assets/stage36-auto-480.webp",
+  "assets/stage36-auto-720.webp",
+  "assets/stage36-auto-960.webp"
 ]

@@ -6,9 +6,11 @@ from stage30_flow_views import SUBJECTS, VIEWS, render_view
 def dashboard(f):
  key=f['id']
  titles=[step[0] for step in f['steps']]
+ art = 'assets/stage36-auto.png' if key == 'auto' else 'assets/stage27-process-cutout.png'
+ art_alt = 'Фирменная иллюстрация автосервиса: автомобиль, заказ-наряд и инструмент' if key == 'auto' else 'Фирменная иллюстрация: обращение, ответственный и выполненная задача'
  if titles != list(VIEWS[key]):
   raise ValueError('Manager views must match the scenario steps: '+key)
- h='<aside class="flow-control process-preview manager-workspace"><div class="preview-heading"><span class="preview-indicator" aria-hidden="true"></span><span>Вид руководителя</span><span class="preview-demo">Демо</span></div><figure class="manager-art"><img src="assets/stage27-process-cutout.png" width="960" height="640" loading="lazy" decoding="async" alt="Фирменная иллюстрация: обращение, ответственный и выполненная задача"></figure><div class="manager-context"><span>Пример процесса</span><strong>'+escape(SUBJECTS[key])+'</strong></div>'
+ h='<aside class="flow-control process-preview manager-workspace"><div class="preview-heading"><span class="preview-indicator" aria-hidden="true"></span><span>Вид руководителя</span><span class="preview-demo">Демо</span></div><figure class="manager-art"><img src="'+art+'" width="960" height="640" loading="lazy" decoding="async" alt="'+art_alt+'"></figure><div class="manager-context"><span>Пример процесса</span><strong>'+escape(SUBJECTS[key])+'</strong></div>'
  for i,(title,status,event,owner,benefit,icon) in enumerate(f['steps']):
   h+=f'<section class="manager-screen manager-screen-{i}" data-manager-screen="{i}"'+(' hidden' if i else '')+'><span class="manager-kicker">'+escape(title)+'</span><h4>'+escape(status)+'</h4>'
   h+=render_view(key,title)

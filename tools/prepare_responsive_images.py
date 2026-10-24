@@ -12,6 +12,7 @@ SOURCES = {
     'stage28-websites-v1': (480, 720, 960),
     'stage27-process-cutout': (480, 720, 960),
     'stage26-enquiry-cutout-v1': (360, 540, 720),
+    'stage36-auto': (480, 720, 960),
 }
 
 
@@ -26,7 +27,8 @@ def main():
                     raise ValueError('Do not upscale approved art')
                 height = round(image.height * width / image.width)
                 variant = image.resize((width, height), Image.Resampling.LANCZOS)
-                target = ASSETS / f'{stem}-stage34-{width}.webp'
+                variant_stem = stem if stem == 'stage36-auto' else stem + '-stage34'
+                target = ASSETS / f'{variant_stem}-{width}.webp'
                 variant.save(target, 'WEBP', lossless=True, method=6, exact=True)
                 with Image.open(target) as check:
                     assert check.size == (width, height)

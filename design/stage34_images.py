@@ -1,4 +1,4 @@
-"""Responsive alpha WebP sources around four existing PNG illustrations.
+"""Responsive alpha WebP sources around approved PNG illustrations.
 
 Only generated, trusted HTML is processed. Original img tags remain byte-for-byte
 unchanged. Existing picture elements are skipped, making enhancement idempotent.
@@ -13,6 +13,7 @@ ASSETS = {
     'assets/stage27-process-cutout.png': (480, 720, 960),
     'assets/stage28-websites-v1.png': (480, 720, 960),
     'assets/stage26-enquiry-cutout-v1.png': (360, 540, 720),
+    'assets/stage36-auto.png': (480, 720, 960),
 }
 
 # Quote-aware tokenization preserves > inside quoted attribute values.
@@ -71,7 +72,8 @@ def enhance(body):
         src = attrs.get('src')
         if src not in ASSETS:
             return tag
-        srcset = ', '.join(f'{src[:-4]}-stage34-{width}.webp {width}w'
+        variant_stem = src[:-4] if src == 'assets/stage36-auto.png' else src[:-4] + '-stage34'
+        srcset = ', '.join(f'{variant_stem}-{width}.webp {width}w'
                            for width in ASSETS[src])
         sizes = _sizes(set(attrs.get('class', '').split()),
                        figure_stack[-1] if figure_stack else set())

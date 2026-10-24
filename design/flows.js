@@ -27,8 +27,13 @@ if(flowRoot){
   panel.querySelector('[data-event-owner]').textContent=owner;
   panel.querySelector('[data-event-action]').textContent=action;
   panel.querySelector('[data-flow-index]').textContent='Шаг '+(index+1)+' из 5';
-  panel.querySelector('[data-flow-back]').disabled=index===0;
-  panel.querySelector('[data-flow-next]').disabled=index===4;
+  const back=panel.querySelector('[data-flow-back]'),next=panel.querySelector('[data-flow-next]');
+  const focusedControl=document.activeElement;
+  back.disabled=index===0;
+  next.disabled=index===4;
+  // Keep keyboard focus in this control row when its active button reaches an edge.
+  if(focusedControl===next&&next.disabled)back.focus({preventScroll:true});
+  else if(focusedControl===back&&back.disabled)next.focus({preventScroll:true});
   panel.querySelector('.flow-event').hidden=false;
   panel.querySelectorAll('[data-flow-step]').forEach((button,i)=>{button.setAttribute('aria-pressed',String(i===index));if(i===index)button.setAttribute('aria-current','step');else button.removeAttribute('aria-current');});
   const jump=mobileJumps.get(flow.id);

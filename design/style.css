@@ -1588,3 +1588,21 @@ footer .public-contact-compact>a{display:flex!important;align-items:center;margi
 .case34-zoom:hover{text-decoration-thickness:2px}
 .case34-zoom:focus-visible{outline:2px solid var(--purple);outline-offset:3px;border-radius:3px}
 @media(max-width:540px){.case-screen .case34-screen-link{border-radius:10px}}
+
+/* Stage36: readable scope and conditions, including enlarged browser text. */
+.company29-prices .company29-price-grid article>p,
+.company29-prices .company29-price-grid details p,
+.company29-prices .company29-price-conditions p{font-size:1rem;line-height:1.75;overflow-wrap:break-word}
+.company29-prices .company29-price-grid summary{font-size:1rem;line-height:1.6;min-height:44px}
+.company29-prices .commercial31-result{font-size:.9375rem;line-height:1.65;overflow-wrap:break-word}
+.company29-prices .commercial31-site-formats dt,
+.company29-prices .commercial31-site-formats dd{font-size:1rem}
+.company29-prices .commercial31-site-formats dt{min-width:0;overflow-wrap:break-word}
+.company29-prices .commercial31-site-formats dd{white-space:normal}
+.company29-prices .company29-price-grid summary:focus-visible{outline:2px solid var(--purple);outline-offset:3px;border-radius:3px}
+@media(max-width:440px){
+ .company29-prices .commercial31-site-formats>div{flex-direction:column;align-items:flex-start;gap:0}
+ .company29-prices .commercial31-site-formats dd{text-align:left}
+}
+
+@media(max-width:540px){.flow-showcase [data-flow-panel="auto"] .manager-art img{object-fit:contain}}
