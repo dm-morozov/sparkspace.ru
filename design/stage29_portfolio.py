@@ -1,6 +1,7 @@
 """Presentation wrappers around existing projects and factual case content."""
 import re
 import stage25_enquiry
+import stage32_cases
 
 
 def projects(projects_html):
@@ -29,7 +30,7 @@ def case(body, kind):
             has_more = '<figure' in remaining
             body = body.replace(screens.group(), remaining if has_more else '', 1)
             preview_id = '' if has_more else ' id="screens"'
-            preview = f'<section class="wrap case29-preview"{preview_id}>' + figure.group() + '</section>'
+            preview = f'<section class="wrap case29-preview"{preview_id}>' + figure.group() + '</section>' + stage32_cases.mobile_case(kind)
             body = body.replace('</section>', '</section>' + preview, 1)
     # The existing related service links remain; the full enquiry replaces their old button.
     body = re.sub(r'<a class="btn [^"]*"[^>]*>.*?</a>', '', body, flags=re.S)
