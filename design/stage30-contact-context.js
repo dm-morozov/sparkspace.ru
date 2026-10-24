@@ -19,9 +19,12 @@
     property: {service: 'automation', label: 'Управляющая компания'},
     content: {service: 'automation', label: 'Контент и публикации'}
   };
+  const formats = {landing: 'Лендинг', company: 'Сайт компании', shop: 'Интернет-магазин'};
   const params = new URLSearchParams(window.location.search);
   const serviceKey = params.get('service');
   const service = Object.prototype.hasOwnProperty.call(services, serviceKey) ? services[serviceKey] : '';
+  const formatKey = params.get('format');
+  const format = serviceKey === 'websites' && Object.prototype.hasOwnProperty.call(formats, formatKey) ? formats[formatKey] : '';
   const scenarioKey = params.get('scenario');
   const candidate = Object.prototype.hasOwnProperty.call(scenarios, scenarioKey) ? scenarios[scenarioKey] : null;
   const scenario = service && candidate && candidate.service === serviceKey ? candidate.label : '';
@@ -30,7 +33,7 @@
   const button = root.querySelector('[data-contact-copy]');
   const status = root.querySelector('[data-contact-status]');
   if (!selection || !message || !button || !status) return;
-  const topic = service ? service + (scenario ? ' · ' + scenario : '') : '';
+  const topic = service ? service + (format ? ' · ' + format : '') + (scenario ? ' · ' + scenario : '') : '';
   selection.textContent = topic ? 'Вы выбрали: ' + topic : 'Можно начать с нескольких слов о вашей задаче.';
   const publicText = topic ? 'Здравствуйте! Хочу обсудить: ' + topic + '.' : 'Здравствуйте! Хочу обсудить проект.';
   message.value = publicText + '\n\nЗадача: ';

@@ -1,6 +1,7 @@
 """Build a public static release without the local lead API or draft consent."""
 from pathlib import Path
 from html.parser import HTMLParser
+from html import escape
 from urllib.parse import urlsplit, unquote
 import json, re, runpy, shutil, sys, zipfile
 
@@ -12,6 +13,7 @@ sys.path.insert(0, str(SOURCE))
 runpy.run_path(str(SOURCE / 'build.py'), run_name='__main__')
 import stage6
 import stage29_company
+import stage33_metadata
 
 manifest = json.loads((ROOT / 'backend/docker/static-manifest.json').read_text(encoding='utf-8'))
 names = [n for n in manifest if n not in {'consent-draft.html', 'lead-form.js'}]
@@ -31,7 +33,8 @@ for name in names:
         html = re.sub(r'<main id="main">.*?</main>', lambda _: contact, html, flags=re.S)
     url = DOMAIN + ('/' if name == 'index.html' else '/' + name)
     title = re.search(r'<title>(.*?)</title>', html).group(1)
-    meta = f'<link rel="canonical" href="{url}"><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:site_name" content="SparkSpace"><meta property="og:title" content="{title}"><meta property="og:url" content="{url}"><meta property="og:image" content="{DOMAIN}/assets/app-product-concept-v1.jpg"><link rel="icon" href="assets/sparkspace-mark.png">'
+    description = escape(stage33_metadata.DESCRIPTIONS[name], quote=True)
+    meta = f'<meta property="og:description" content="{description}"><link rel="canonical" href="{url}"><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:site_name" content="SparkSpace"><meta property="og:title" content="{title}"><meta property="og:url" content="{url}"><meta property="og:image" content="{DOMAIN}/assets/app-product-concept-v1.jpg"><link rel="icon" href="assets/sparkspace-mark.png">'
     html = html.replace('</head>', meta + '</head>')
     dst.write_text(html, encoding='utf-8')
 

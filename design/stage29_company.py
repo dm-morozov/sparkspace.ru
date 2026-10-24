@@ -143,9 +143,9 @@ def prices(S):
         item = lookup[slug]
         price = (
             '<dl class="commercial31-site-formats">'
-            f'<div><dt>Лендинг</dt><dd>{escape(item[4])}</dd></div>'
-            '<div><dt>Сайт компании</dt><dd>от 50 000 ₽</dd></div>'
-            '<div><dt>Интернет-магазин</dt><dd>По смете</dd></div>'
+            f'<div><dt><a href="contacts.html?service=websites&amp;format=landing" aria-label="Обсудить лендинг">Лендинг</a></dt><dd>{escape(item[4])}</dd></div>'
+            '<div><dt><a href="contacts.html?service=websites&amp;format=company" aria-label="Обсудить сайт компании">Сайт компании</a></dt><dd>от 50 000 ₽</dd></div>'
+            '<div><dt><a href="contacts.html?service=websites&amp;format=shop" aria-label="Обсудить интернет-магазин">Интернет-магазин</a></dt><dd>По смете</dd></div>'
             '</dl>'
         ) if slug == 'websites' else (
             f'<strong class="company29-price">{escape(item[4])}</strong>'

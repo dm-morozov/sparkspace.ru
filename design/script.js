@@ -29,6 +29,9 @@ hoverNavigation.addEventListener('change',()=>setMegaOpen(false));
 const current=location.pathname.split('/').pop()||'index.html';
 nav.querySelectorAll('a[href]').forEach(a=>{if(a.getAttribute('href')===current){a.setAttribute('aria-current','page');if(mega.contains(a))mega.classList.add('is-current')}});
 
+// Hide the native fallback only after all header handlers are attached.
+document.body.classList.add('navigation-ready');
+
 // Application page: reveal once, with visible no-JS and reduced-motion fallbacks.
 const appRevealNodes=[...document.querySelectorAll('[data-app-reveal]')];
 if(appRevealNodes.length && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){

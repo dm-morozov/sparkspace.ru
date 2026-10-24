@@ -1,0 +1,16 @@
+/* Progressive enhancement: keep native navigation until the header is ready. */
+.navigation33{display:none}
+@media(max-width:1180px){
+ body:not(.navigation-ready) .header-focused .menu-button{display:none}
+ body.navigation-ready .navigation33{display:none}
+ .navigation33{display:block;margin-bottom:18px}
+ .navigation33>details{border:1px solid var(--border);border-radius:10px;background:#fff}
+ .navigation33 summary{min-height:44px;padding:10px 16px;color:var(--ink);font-size:14px;font-weight:500;cursor:pointer}
+ .navigation33 summary::marker{color:var(--purple)}
+ .navigation33 details[open] summary{border-bottom:1px solid var(--border);color:var(--purple)}
+ .navigation33 nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;padding:10px}
+ .navigation33 nav a{display:flex;align-items:center;min-height:44px;padding:10px;border-radius:6px;font-size:14px;line-height:1.5}
+ .navigation33 nav a:hover{background:#f3f1ff;color:var(--purple)}
+ .navigation33 a:focus-visible,.navigation33 summary:focus-visible{outline:2px solid var(--purple);outline-offset:-3px}
+}
+@media(max-width:400px){.navigation33 nav{grid-template-columns:minmax(0,1fr)}}
