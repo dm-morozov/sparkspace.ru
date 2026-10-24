@@ -14,6 +14,7 @@ runpy.run_path(str(SOURCE / 'build.py'), run_name='__main__')
 import stage6
 import stage29_company
 import stage33_metadata
+import stage34_images
 
 manifest = json.loads((ROOT / 'backend/docker/static-manifest.json').read_text(encoding='utf-8'))
 names = [n for n in manifest if n not in {'consent-draft.html', 'lead-form.js'}]
@@ -29,7 +30,7 @@ for name in names:
     html = html.replace('<meta name="robots" content="noindex,nofollow">', '<meta name="robots" content="index,follow">')
     html = re.sub(r'<script src="lead-form\.js[^\"]*"></script>', '', html)
     if name == 'contacts.html':
-        contact = '<main id="main">' + stage29_company.contacts() + '</main>'
+        contact = '<main id="main">' + stage34_images.enhance(stage29_company.contacts()) + '</main>'
         html = re.sub(r'<main id="main">.*?</main>', lambda _: contact, html, flags=re.S)
     url = DOMAIN + ('/' if name == 'index.html' else '/' + name)
     title = re.search(r'<title>(.*?)</title>', html).group(1)

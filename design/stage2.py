@@ -1,4 +1,5 @@
 """Stage 2 presentation fragments, consumed by build.py."""
+from html import escape
 def case_intro(name, eyebrow, title, description, domain):
     return f'<section class="wrap inner-intro"><div class="breadcrumb"><a href="index.html">Главная</a><span>/</span><a href="projects.html">Проекты</a><span>/</span>{name}</div><span class="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{description}</p><div class="case-actions"><a class="text-link" href="https://{domain}/" target="_blank" rel="noopener noreferrer">Открыть {domain} ↗</a><a class="text-link" href="#screens">Посмотреть экраны ↓</a></div></section>'
 
@@ -6,7 +7,16 @@ def case_section(label, title, paragraphs):
     return '<section class="wrap case-overview"><div><span class="eyebrow">'+label+'</span><h2>'+title+'</h2></div><div>'+''.join('<p>'+p+'</p>' for p in paragraphs)+'</div></section>'
 
 def screen(image, alt, caption):
-    return f'<figure class="case-screen"><img src="assets/{image}" width="1265" height="712" alt="{alt}" loading="lazy"><figcaption>{caption}</figcaption></figure>'
+    src = 'assets/' + escape(image, quote=True)
+    label = escape('Рассмотреть экран: ' + alt + ' (новая вкладка)', quote=True)
+    return (
+        f'<figure class="case-screen"><a class="case34-screen-link" href="{src}" '
+        f'target="_blank" rel="noopener" aria-label="{label}">'
+        f'<img src="{src}" width="1265" height="712" alt="{escape(alt, quote=True)}" loading="lazy"></a>'
+        f'<figcaption><span class="case34-original-caption">{caption}</span>'
+        f'<a class="case34-zoom" href="{src}" target="_blank" rel="noopener">'
+        'Рассмотреть экран <span>(новая вкладка)</span></a></figcaption></figure>'
+    )
 
 def case_mu56(btn):
     body = case_intro('Мир Улыбок','УСЛУГИ / САЙТ','Программы праздников.<br>Реальные фотографии.','Мир Улыбок — сайт детских праздников в Оренбурге. Программы, персонажи и фотографии для выбора подходящего формата.','mu56.ru')
