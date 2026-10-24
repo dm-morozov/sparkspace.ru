@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "policy": "Dates are evidenced capture/report dates, never filesystem timestamps. unknown requires review. reviewed_sha256 binds provenance to bytes; review caption/source/date before replacing it. Derivatives inherit original provenance; references to local notes are evidence pointers, not public URLs. A matching checksum binds recorded provenance to these bytes; it is not proof of authorship or a customer relationship.",
+  "assets": {
+    "assets/akudinov-home-desktop.jpg": {
+      "kind": "unknown",
+      "source": "https://akudinov.top/",
+      "date": "unknown",
+      "purpose": "unknown",
+      "reviewed_sha256": "16c6eba34d18cde0c7580dcf9398b193a7dcc0fc7087f0c76a207149c49390c9",
+      "evidence": [
+        "design/build.py: P portfolio mapping"
+      ]
+    },
+    "assets/dmitry-morozov.webp": {
+      "kind": "unknown",
+      "source": "unknown",
+      "date": "unknown",
+      "purpose": "unknown",
+      "reviewed_sha256": "cc72dcfe11455eb3bae2e20c4da5332fbb269163630b846f58f007ce7ca9d4d1",
+      "evidence": []
+    },
+    "assets/mu56-home-desktop.jpg": {
+      "kind": "real_screenshot",
+      "source": "https://mu56.ru/",
+      "date": "2026-10-11",
+      "purpose": "Desktop project evidence; embedded prices belong to capture date",
+      "reviewed_sha256": "6f9ddfba38b4dcf52faa3b6a8bd1083beedd4f67483bd190c9a691f3a20caca0",
+      "evidence": [
+        "design/stage2.py"
+      ]
+    },
+    "assets/mu56-pagespeed-desktop-2026-10-08.png": {
+      "kind": "historical_pagespeed_report",
+      "source": "User-provided PageSpeed Insights desktop report for https://mu56.ru/",
+      "date": "2026-10-08",
+      "purpose": "Historical single desktop laboratory report, not current mobile or field performance",
+      "reviewed_sha256": "8b3baed6eba4e42508c6335d30893f407b0d79b618fc0601bc92ec9f0e59b97a",
+      "evidence": [
+        "design/stage2.py"
+      ]
+    },
+    "assets/pilotspace-home-desktop.jpg": {
+      "kind": "real_screenshot",
+      "source": "https://pilotspace.ru/",
+      "date": "2026-10-11",
+      "purpose": "Desktop project evidence; embedded prices belong to capture date",
+      "reviewed_sha256": "004227eb136e8f4fd86604031785730d961b0d4d94156fe130d8781c4f030914",
+      "evidence": [
+        "design/stage2.py"
+      ]
+    },
+    "assets/pilotspace-quiz-desktop.jpg": {
+      "kind": "real_screenshot",
+      "source": "https://pilotspace.ru/",
+      "date": "2026-10-11",
+      "purpose": "Desktop project evidence; embedded prices belong to capture date",
+      "reviewed_sha256": "6b4a979027b8e2de203e1d3e64e7cd6ba031db6df0165e384b5141eab459c830",
+      "evidence": [
+        "design/stage2.py"
+      ]
+    },
+    "assets/pilotspace-training-settings.jpg": {
+      "kind": "real_screenshot",
+      "source": "https://pilotspace.ru/",
+      "date": "2026-10-11",
+      "purpose": "Desktop project evidence; embedded prices belong to capture date",
+      "reviewed_sha256": "0e97c7b1e9aa4b79c4ad1baecd7cae3a79fcef2d18342a9f8b6b60df38f1bda7",
+      "evidence": [
+        "design/stage2.py"
+      ]
+    },
+    "assets/prommashina-home-desktop.jpg": {
+      "kind": "unknown",
+      "source": "https://prommashina.ru/",
+      "date": "unknown",
+      "purpose": "unknown",
+      "reviewed_sha256": "f1141339b18d15f975c2976b58bf79d58f70cee0ee6a912009b529fe7a4d98b6",
+      "evidence": [
+        "design/build.py: P portfolio mapping"
+      ]
+    },
+    "assets/sparkspace-mark.png": {
+      "kind": "unknown",
+      "source": "unknown",
+      "date": "unknown",
+      "purpose": "unknown",
+      "reviewed_sha256": "f4efe8960913a5e3c1f96e3b7796bf02511427db362270e7ee634af9efc6f9d0",
+      "evidence": []
+    },
+    "assets/app-product-concept-v1.jpg": {
+      "kind": "unknown",
+      "source": "unknown",
+      "date": "unknown",
+      "purpose": "unknown",
+      "reviewed_sha256": "96547bc3d0b3b24152437b6a27b25f858afcaa2294d45e409ba3dd051bd52cb2",
+      "evidence": []
+    },
+    "assets/direction-sites-v1.jpg": {
+      "kind": "unknown",
+      "source": "unknown",
+      "date": "unknown",
+      "purpose": "unknown",
+      "reviewed_sha256": "014e00213b0b8df6ac9d46dafc62cbee0b47c323398b768d97ef8ad4c4001fe8",
+      "evidence": []
+    },
+    "assets/direction-systems-v1.jpg": {
+      "kind": "unknown",
+      "source": "unknown",
+      "date": "unknown",
+      "purpose": "unknown",
+      "reviewed_sha256": "1e21277f893727e3b8d8d51b997b57b25764c3399a9ec79d469dfb7746ad3cb0",
+      "evidence": []
+    },
+    "assets/direction-growth-v1.jpg": {
+      "kind": "unknown",
+      "source": "unknown",
+      "date": "unknown",
+      "purpose": "unknown",
+      "reviewed_sha256": "cd235020b9df755d707cbd85386da0706345b1bb809be51b051a85b003b369ae",
+      "evidence": []
+    },
+    "assets/stage27-process-cutout.png": {
+      "kind": "generated_illustration",
+      "source": "Image generation; repository release note",
+      "date": "unknown",
+      "purpose": "Transparent brand illustration, not product screenshot",
+      "reviewed_sha256": "26644d7d161ff88136ca6c89e9719c2b72c6dbb47e2c21bd6067db5ce8ee20c6",
+      "evidence": [
+        "project-notes/site/STAGE27-RELEASE.md"
+      ]
+    },
+    "assets/stage25-delivery-process-v1.jpg": {
+      "kind": "unknown",
+      "source": "unknown",
+      "date": "unknown",
+      "purpose": "unknown",
+      "reviewed_sha256": "780c1c4389b23754d52d86f3be629a163a8e5d7ec1b08f2f15e33e61dbf6e156",
+      "evidence": []
+    },
+    "assets/stage26-enquiry-cutout-v1.png": {
+      "kind": "unknown",
+      "source": "unknown",
+      "date": "unknown",
+      "purpose": "unknown",
+      "reviewed_sha256": "9875f6b17b6aeb226e5610424f5052dbee773958e581c0be4573924ceb7aaf3d",
+      "evidence": []
+    },
+    "assets/stage27-hero-v1.png": {
+      "kind": "generated_illustration",
+      "source": "Image generation; repository release note",
+      "date": "unknown",
+      "purpose": "Transparent brand illustration, not product screenshot",
+      "reviewed_sha256": "af8992da87101ffb0b5af6912682c2aac1e29cdc69aea6904a3d114139a98eee",
+      "evidence": [
+        "project-notes/site/STAGE27-RELEASE.md"
+      ]
+    },
+    "assets/stage28-websites-v1.png": {
+      "kind": "generated_illustration",
+      "source": "Repository website design brief",
+      "date": "unknown",
+      "purpose": "Decorative illustration of website formats",
+      "reviewed_sha256": "52f7926af195607b507265ff5276ac6786b005e7c0d2b2ee8e7284c4fa7a656b",
+      "evidence": [
+        "project-notes/site/STAGE28-WEBSITES-BRIEF.md"
+      ]
+    },
+    "assets/mu56-mobile-stage32.png": {
+      "kind": "real_screenshot",
+      "source": "https://mu56.ru/",
+      "date": "2026-10-24",
+      "purpose": "Real mobile project screen; no interface repaint",
+      "reviewed_sha256": "f36c48b717867aca1371e9648ab047a6c605fcc6adb4ac639773f77a6028ef50",
+      "evidence": [
+        "design/stage32_cases.py",
+        "project-notes/site/STAGE32-INTEGRATION.md"
+      ]
+    },
+    "assets/pilotspace-mobile-stage32.png": {
+      "kind": "real_screenshot",
+      "source": "https://pilotspace.ru/",
+      "date": "2026-10-24",
+      "purpose": "Real mobile project screen; no interface repaint",
+      "reviewed_sha256": "5995106b9c3f398baff37f8af70a246223998765d62734d89ba223798b6fbc0a",
+      "evidence": [
+        "design/stage32_cases.py",
+        "project-notes/site/STAGE32-INTEGRATION.md"
+      ]
+    },
+    "assets/stage32-mu56-accent.png": {
+      "kind": "generated_illustration",
+      "source": "Image generation; prompt recorded in integration note",
+      "date": "2026-10-24",
+      "purpose": "Decorative case accent, not product evidence",
+      "reviewed_sha256": "81963c6323890db2486aa03b50c9347b1ed49f181d774205afa5d6e2cc687521",
+      "evidence": [
+        "project-notes/site/STAGE32-INTEGRATION.md"
+      ]
+    },
+    "assets/stage32-pilot-accent.png": {
+      "kind": "generated_illustration",
+      "source": "Image generation; prompt recorded in integration note",
+      "date": "2026-10-24",
+      "purpose": "Decorative case accent, not product evidence",
+      "reviewed_sha256": "1cc8b79bac35004247d3aca0e6fba16079bebe69b218b0ab0463d0aea51adf09",
+      "evidence": [
+        "project-notes/site/STAGE32-INTEGRATION.md"
+      ]
+    },
+    "assets/stage26-enquiry-cutout-v1-stage34-360.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage26-enquiry-cutout-v1.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "db9cf6f4014781b4b1c594e0da9dcefacd21423f3712b397b27e140986218328",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage26-enquiry-cutout-v1.png"
+    },
+    "assets/stage26-enquiry-cutout-v1-stage34-540.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage26-enquiry-cutout-v1.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "2a558a0316a7ffa4b5b41e512eb6a3047947247fa71d781225287af39737f3b2",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage26-enquiry-cutout-v1.png"
+    },
+    "assets/stage26-enquiry-cutout-v1-stage34-720.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage26-enquiry-cutout-v1.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "e8cbb381a821ccd7088deb748bd049778a76649c1ef5dc3cfe58c8b965a718b8",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage26-enquiry-cutout-v1.png"
+    },
+    "assets/stage27-hero-v1-stage34-480.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage27-hero-v1.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "767b1fd36582b24091a9866fb57396e81576223a5b460b58508e2c3841206be1",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage27-hero-v1.png"
+    },
+    "assets/stage27-hero-v1-stage34-720.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage27-hero-v1.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "0d0954402b73844d73038832f03538b55856085df0598b089358da74db35b937",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage27-hero-v1.png"
+    },
+    "assets/stage27-hero-v1-stage34-960.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage27-hero-v1.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "84f0267286aa524fd94888cfbb56df14bc5151b0ff60a1c0e1c824e93793dc95",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage27-hero-v1.png"
+    },
+    "assets/stage27-process-cutout-stage34-480.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage27-process-cutout.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "d67312111e66644768f596c69893978106c86bcf1f32eb3329a1dd0ca1488c18",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage27-process-cutout.png"
+    },
+    "assets/stage27-process-cutout-stage34-720.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage27-process-cutout.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "970010694779bc935ff5043b0c243077f93ab41ab9dc3503f7f524a5109c14c6",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage27-process-cutout.png"
+    },
+    "assets/stage27-process-cutout-stage34-960.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage27-process-cutout.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "cba7ad0bb112eab940ebdfe3a969657b91c734f3a275d772a65e12816e97a994",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage27-process-cutout.png"
+    },
+    "assets/stage28-websites-v1-stage34-480.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage28-websites-v1.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "d7bb41f25948512ca7c8d61bbcc6fd3f2aa68175135d484fed2ad644309df1de",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage28-websites-v1.png"
+    },
+    "assets/stage28-websites-v1-stage34-720.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage28-websites-v1.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "1d96e2bd273cf160b6dba4dcf030901bf9b8267e75243eb3902bd0a39e44768b",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage28-websites-v1.png"
+    },
+    "assets/stage28-websites-v1-stage34-960.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage28-websites-v1.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "e25fd9732222f6ed0de1141e9aa0865b1fea01d9fc45d365f963d999953e7539",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage28-websites-v1.png"
+    },
+    "assets/stage35-social-development.jpg": {
+      "kind": "composed_social_preview",
+      "source": "Repository native HTML capture",
+      "date": "unknown",
+      "purpose": "Social preview composition; not standalone product screenshot",
+      "reviewed_sha256": "e12e6b2943b081ded926ced844a747b32905621ec16de38c91be356751a0afb1",
+      "evidence": [
+        "tools/prepare_social_preview_html.py",
+        "tools/finalize_social_captures.py"
+      ]
+    },
+    "assets/stage35-social-general.jpg": {
+      "kind": "composed_social_preview",
+      "source": "Repository native HTML capture",
+      "date": "unknown",
+      "purpose": "Social preview composition; not standalone product screenshot",
+      "reviewed_sha256": "82ab84da1781ef0422a594f8763a4a14ce1355f9d4b28f436474e12e882b3e5b",
+      "evidence": [
+        "tools/prepare_social_preview_html.py",
+        "tools/finalize_social_captures.py"
+      ]
+    },
+    "assets/stage35-social-mu56.jpg": {
+      "kind": "composed_social_preview",
+      "source": "Repository native HTML capture",
+      "date": "unknown",
+      "purpose": "Social preview composition; not standalone product screenshot",
+      "reviewed_sha256": "28fd5142bdf4f00b96a4f6796d4af46362345cb6a1f2ac5b0c16f46bc17a02ca",
+      "evidence": [
+        "tools/prepare_social_preview_html.py",
+        "tools/finalize_social_captures.py"
+      ]
+    },
+    "assets/stage35-social-pilotspace.jpg": {
+      "kind": "composed_social_preview",
+      "source": "Repository native HTML capture",
+      "date": "unknown",
+      "purpose": "Social preview composition; not standalone product screenshot",
+      "reviewed_sha256": "4a78fa9c5816c4339918ffea38c5c1c2b0ced3ee5eaf30a6140b06e17fab99ec",
+      "evidence": [
+        "tools/prepare_social_preview_html.py",
+        "tools/finalize_social_captures.py"
+      ]
+    },
+    "assets/stage35-social-systems.jpg": {
+      "kind": "composed_social_preview",
+      "source": "Repository native HTML capture",
+      "date": "unknown",
+      "purpose": "Social preview composition; not standalone product screenshot",
+      "reviewed_sha256": "91a498f500ce5119fe72e0eaab929881347980ce6d246257851f8231ce03f97d",
+      "evidence": [
+        "tools/prepare_social_preview_html.py",
+        "tools/finalize_social_captures.py"
+      ]
+    },
+    "assets/stage35-social-websites.jpg": {
+      "kind": "composed_social_preview",
+      "source": "Repository native HTML capture",
+      "date": "unknown",
+      "purpose": "Social preview composition; not standalone product screenshot",
+      "reviewed_sha256": "173f95b66db3ac8b2dda4c0dc3d2e6d82a81c881dc3fb8f38fb4de4fc2e68a08",
+      "evidence": [
+        "tools/prepare_social_preview_html.py",
+        "tools/finalize_social_captures.py"
+      ]
+    },
+    "assets/stage36-auto.png": {
+      "kind": "generated_illustration",
+      "source": "Image generation; original render path recorded in integration note",
+      "date": "2026-10-24",
+      "purpose": "Illustrative car-service process, not client interface or result",
+      "reviewed_sha256": "1f58cd0f235872c1685194dfdc007f8cc5462c556ff5ef17faef5eb2949ede1c",
+      "evidence": [
+        "project-notes/site/STAGE36-INTEGRATION.md"
+      ]
+    },
+    "assets/stage36-auto-480.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage36-auto.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "bc452a4677cc23027baeb1fcae69ac35c1a1eb639593cdc0f34dfc7c27308cd3",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage36-auto.png"
+    },
+    "assets/stage36-auto-720.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage36-auto.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "865990e020ee55515365a801a932614d0431102fd1780d5fd08d7bdde525a76b",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage36-auto.png"
+    },
+    "assets/stage36-auto-960.webp": {
+      "kind": "responsive_derivative",
+      "source": "assets/stage36-auto.png",
+      "date": "unknown",
+      "purpose": "Lossless responsive derivative; provenance inherited from source",
+      "reviewed_sha256": "463ce9a1f58d9662942128727aac52b4ca5ea1a3d15bce72404e14a4d5a19fac",
+      "evidence": [
+        "tools/prepare_responsive_images.py"
+      ],
+      "derived_from": "assets/stage36-auto.png"
+    }
+  }
+}

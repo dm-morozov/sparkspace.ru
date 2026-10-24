@@ -1,0 +1,2397 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "fba80c7c5fd12007e211b3d9034e3cec6cb995a492937966c8a7a30b7a21ecb0",
+  "sources_sha256": "d0b1cb0e93760c54458b87807b7b7b6d638cb69b89ac0b0c6bb82e71d173159b",
+  "page_sha256": {
+    "about.html": "c74ad4ba8a6b06236f8bd7b6e2718c0203c44a2aa8183ff9358a91a435abd762",
+    "applications.html": "d8eb996a7625fe9b55ace4c850ca8f587f8b52836f1a8c970763fa4e2dbfc6b0",
+    "approach.html": "af96c42073570c2f7f89ba63b74f7bc5ce7c828438641e7e0a6a79a49c951efb",
+    "audit.html": "f0b555ee33eec1ced4820820d03190045b8d502ed90b8a4e991cbfb680a47ac6",
+    "automation.html": "b8e69d1b10890d8dadb69c1d069b97bd4ae6f72f6d0ae0e0c8d5de128ea718b3",
+    "case-mu56.html": "55834e32cc02486b0e6048edc55c0f7edf36e7634e8364ae76fc5f83403965f2",
+    "case-pilotspace.html": "4b61627a3d3c350f7039054d2d00b6eb8dd5ef6fe7247a3a1948c120c5d129df",
+    "contacts.html": "01d515995a7f75e31f546c28782c8b4e657e3bf091909c8401bb426f3a1eda16",
+    "index.html": "0926f10169155675efce7464792b0a056fe6a7b6c005b4fc08f5f1036f4b90a9",
+    "integrations.html": "7041e57b9b8884add3693d84dfa47e464c9f62f88dbab59d11c632ea4ab6bc84",
+    "prices.html": "6118e632fa86b98b104117baef67556a889b0054e56e6eedd851e91f4743de83",
+    "projects.html": "6633ecbc0d715473e0cd42411ef2c3c6fb560491371caf7bc07a9b2dd984843e",
+    "redesign.html": "ddbbf3ec73e04c11672729763af1b2cac1955c739ea6db5575971ba4c3a51f14",
+    "seo.html": "52fc3f1f58fcfb6ddc5e1390545f66a8163b6a1f8b541e11f086a612966580c2",
+    "services.html": "8112740bc83db45014cd91b5d345e2b951601c7e0ef44e9e737b144db4d7a356",
+    "solutions.html": "b8a674e0833dee468db08257fc83e75cb8045380014d014cacfa161b8e5e3601",
+    "support.html": "2475f910c2d61f0594b26bf0998eb3c4c8b13abcb944bb5d66e6727cd84e3198",
+    "websites.html": "203ec56e7f9bb0b4fcd608ea6d1eae2009afdd6a5e34afecdc43ad77b1c101a6"
+  },
+  "scope": "Public manifest raster images; HTML img/source/picture/social/icon/original links. CSS backgrounds and inline SVG are outside this inventory.",
+  "assets": [
+    {
+      "path": "assets/akudinov-home-desktop.jpg",
+      "sha256": "16c6eba34d18cde0c7580dcf9398b193a7dcc0fc7087f0c76a207149c49390c9",
+      "bytes": 79406,
+      "width": 1265,
+      "height": 712,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "projects.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "unknown",
+        "source": "https://akudinov.top/",
+        "date": "unknown",
+        "purpose": "unknown",
+        "reviewed_sha256": "16c6eba34d18cde0c7580dcf9398b193a7dcc0fc7087f0c76a207149c49390c9",
+        "evidence": [
+          "design/build.py: P portfolio mapping"
+        ]
+      }
+    },
+    {
+      "path": "assets/app-product-concept-v1.jpg",
+      "sha256": "96547bc3d0b3b24152437b6a27b25f858afcaa2294d45e409ba3dd051bd52cb2",
+      "bytes": 115852,
+      "width": 1536,
+      "height": 1024,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "unknown",
+        "source": "unknown",
+        "date": "unknown",
+        "purpose": "unknown",
+        "reviewed_sha256": "96547bc3d0b3b24152437b6a27b25f858afcaa2294d45e409ba3dd051bd52cb2",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/direction-growth-v1.jpg",
+      "sha256": "cd235020b9df755d707cbd85386da0706345b1bb809be51b051a85b003b369ae",
+      "bytes": 42959,
+      "width": 960,
+      "height": 640,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "index.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "unknown",
+        "source": "unknown",
+        "date": "unknown",
+        "purpose": "unknown",
+        "reviewed_sha256": "cd235020b9df755d707cbd85386da0706345b1bb809be51b051a85b003b369ae",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/direction-sites-v1.jpg",
+      "sha256": "014e00213b0b8df6ac9d46dafc62cbee0b47c323398b768d97ef8ad4c4001fe8",
+      "bytes": 53005,
+      "width": 960,
+      "height": 640,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "index.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "unknown",
+        "source": "unknown",
+        "date": "unknown",
+        "purpose": "unknown",
+        "reviewed_sha256": "014e00213b0b8df6ac9d46dafc62cbee0b47c323398b768d97ef8ad4c4001fe8",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/direction-systems-v1.jpg",
+      "sha256": "1e21277f893727e3b8d8d51b997b57b25764c3399a9ec79d469dfb7746ad3cb0",
+      "bytes": 34473,
+      "width": 960,
+      "height": 640,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "index.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "unknown",
+        "source": "unknown",
+        "date": "unknown",
+        "purpose": "unknown",
+        "reviewed_sha256": "1e21277f893727e3b8d8d51b997b57b25764c3399a9ec79d469dfb7746ad3cb0",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/dmitry-morozov.webp",
+      "sha256": "cc72dcfe11455eb3bae2e20c4da5332fbb269163630b846f58f007ce7ca9d4d1",
+      "bytes": 45554,
+      "width": 1024,
+      "height": 1024,
+      "format": "WEBP",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "unknown",
+        "source": "unknown",
+        "date": "unknown",
+        "purpose": "unknown",
+        "reviewed_sha256": "cc72dcfe11455eb3bae2e20c4da5332fbb269163630b846f58f007ce7ca9d4d1",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/mu56-home-desktop.jpg",
+      "sha256": "6f9ddfba38b4dcf52faa3b6a8bd1083beedd4f67483bd190c9a691f3a20caca0",
+      "bytes": 118900,
+      "width": 1265,
+      "height": 712,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "case-mu56.html",
+          "roles": [
+            "img",
+            "original-link"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "projects.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "real_screenshot",
+        "source": "https://mu56.ru/",
+        "date": "2026-10-11",
+        "purpose": "Desktop project evidence; embedded prices belong to capture date",
+        "reviewed_sha256": "6f9ddfba38b4dcf52faa3b6a8bd1083beedd4f67483bd190c9a691f3a20caca0",
+        "evidence": [
+          "design/stage2.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/mu56-mobile-stage32.png",
+      "sha256": "f36c48b717867aca1371e9648ab047a6c605fcc6adb4ac639773f77a6028ef50",
+      "bytes": 331006,
+      "width": 375,
+      "height": 812,
+      "format": "PNG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "case-mu56.html",
+          "roles": [
+            "img",
+            "original-link"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "real_screenshot",
+        "source": "https://mu56.ru/",
+        "date": "2026-10-24",
+        "purpose": "Real mobile project screen; no interface repaint",
+        "reviewed_sha256": "f36c48b717867aca1371e9648ab047a6c605fcc6adb4ac639773f77a6028ef50",
+        "evidence": [
+          "design/stage32_cases.py",
+          "project-notes/site/STAGE32-INTEGRATION.md"
+        ]
+      }
+    },
+    {
+      "path": "assets/mu56-pagespeed-desktop-2026-10-08.png",
+      "sha256": "8b3baed6eba4e42508c6335d30893f407b0d79b618fc0601bc92ec9f0e59b97a",
+      "bytes": 204182,
+      "width": 1280,
+      "height": 661,
+      "format": "PNG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "case-mu56.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "historical_pagespeed_report",
+        "source": "User-provided PageSpeed Insights desktop report for https://mu56.ru/",
+        "date": "2026-10-08",
+        "purpose": "Historical single desktop laboratory report, not current mobile or field performance",
+        "reviewed_sha256": "8b3baed6eba4e42508c6335d30893f407b0d79b618fc0601bc92ec9f0e59b97a",
+        "evidence": [
+          "design/stage2.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/pilotspace-home-desktop.jpg",
+      "sha256": "004227eb136e8f4fd86604031785730d961b0d4d94156fe130d8781c4f030914",
+      "bytes": 61245,
+      "width": 1265,
+      "height": 712,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "img",
+            "original-link"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "projects.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "real_screenshot",
+        "source": "https://pilotspace.ru/",
+        "date": "2026-10-11",
+        "purpose": "Desktop project evidence; embedded prices belong to capture date",
+        "reviewed_sha256": "004227eb136e8f4fd86604031785730d961b0d4d94156fe130d8781c4f030914",
+        "evidence": [
+          "design/stage2.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/pilotspace-mobile-stage32.png",
+      "sha256": "5995106b9c3f398baff37f8af70a246223998765d62734d89ba223798b6fbc0a",
+      "bytes": 134858,
+      "width": 375,
+      "height": 812,
+      "format": "PNG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "img",
+            "original-link"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "real_screenshot",
+        "source": "https://pilotspace.ru/",
+        "date": "2026-10-24",
+        "purpose": "Real mobile project screen; no interface repaint",
+        "reviewed_sha256": "5995106b9c3f398baff37f8af70a246223998765d62734d89ba223798b6fbc0a",
+        "evidence": [
+          "design/stage32_cases.py",
+          "project-notes/site/STAGE32-INTEGRATION.md"
+        ]
+      }
+    },
+    {
+      "path": "assets/pilotspace-quiz-desktop.jpg",
+      "sha256": "6b4a979027b8e2de203e1d3e64e7cd6ba031db6df0165e384b5141eab459c830",
+      "bytes": 43548,
+      "width": 1265,
+      "height": 712,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "applications.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "img",
+            "original-link"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "real_screenshot",
+        "source": "https://pilotspace.ru/",
+        "date": "2026-10-11",
+        "purpose": "Desktop project evidence; embedded prices belong to capture date",
+        "reviewed_sha256": "6b4a979027b8e2de203e1d3e64e7cd6ba031db6df0165e384b5141eab459c830",
+        "evidence": [
+          "design/stage2.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/pilotspace-training-settings.jpg",
+      "sha256": "0e97c7b1e9aa4b79c4ad1baecd7cae3a79fcef2d18342a9f8b6b60df38f1bda7",
+      "bytes": 51993,
+      "width": 1265,
+      "height": 712,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "img",
+            "original-link"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "real_screenshot",
+        "source": "https://pilotspace.ru/",
+        "date": "2026-10-11",
+        "purpose": "Desktop project evidence; embedded prices belong to capture date",
+        "reviewed_sha256": "0e97c7b1e9aa4b79c4ad1baecd7cae3a79fcef2d18342a9f8b6b60df38f1bda7",
+        "evidence": [
+          "design/stage2.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/prommashina-home-desktop.jpg",
+      "sha256": "f1141339b18d15f975c2976b58bf79d58f70cee0ee6a912009b529fe7a4d98b6",
+      "bytes": 92292,
+      "width": 1265,
+      "height": 712,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "projects.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "unknown",
+        "source": "https://prommashina.ru/",
+        "date": "unknown",
+        "purpose": "unknown",
+        "reviewed_sha256": "f1141339b18d15f975c2976b58bf79d58f70cee0ee6a912009b529fe7a4d98b6",
+        "evidence": [
+          "design/build.py: P portfolio mapping"
+        ]
+      }
+    },
+    {
+      "path": "assets/sparkspace-mark.png",
+      "sha256": "f4efe8960913a5e3c1f96e3b7796bf02511427db362270e7ee634af9efc6f9d0",
+      "bytes": 88164,
+      "width": 304,
+      "height": 440,
+      "format": "PNG",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "applications.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "approach.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "audit.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "automation.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "case-mu56.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "contacts.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "prices.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "projects.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "redesign.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "seo.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "support.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "icon",
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "unknown",
+        "source": "unknown",
+        "date": "unknown",
+        "purpose": "unknown",
+        "reviewed_sha256": "f4efe8960913a5e3c1f96e3b7796bf02511427db362270e7ee634af9efc6f9d0",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/stage25-delivery-process-v1.jpg",
+      "sha256": "780c1c4389b23754d52d86f3be629a163a8e5d7ec1b08f2f15e33e61dbf6e156",
+      "bytes": 62325,
+      "width": 1100,
+      "height": 733,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "applications.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "approach.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "automation.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "unknown",
+        "source": "unknown",
+        "date": "unknown",
+        "purpose": "unknown",
+        "reviewed_sha256": "780c1c4389b23754d52d86f3be629a163a8e5d7ec1b08f2f15e33e61dbf6e156",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/stage26-enquiry-cutout-v1-stage34-360.webp",
+      "sha256": "db9cf6f4014781b4b1c594e0da9dcefacd21423f3712b397b27e140986218328",
+      "bytes": 49306,
+      "width": 360,
+      "height": 240,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "applications.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "approach.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "audit.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "automation.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "case-mu56.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "contacts.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "prices.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "projects.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "redesign.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "seo.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "support.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage26-enquiry-cutout-v1-stage34-540.webp",
+        "assets/stage26-enquiry-cutout-v1-stage34-720.webp",
+        "assets/stage26-enquiry-cutout-v1.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage26-enquiry-cutout-v1.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "db9cf6f4014781b4b1c594e0da9dcefacd21423f3712b397b27e140986218328",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage26-enquiry-cutout-v1.png"
+      }
+    },
+    {
+      "path": "assets/stage26-enquiry-cutout-v1-stage34-540.webp",
+      "sha256": "2a558a0316a7ffa4b5b41e512eb6a3047947247fa71d781225287af39737f3b2",
+      "bytes": 105610,
+      "width": 540,
+      "height": 360,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "applications.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "approach.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "audit.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "automation.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "case-mu56.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "contacts.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "prices.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "projects.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "redesign.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "seo.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "support.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage26-enquiry-cutout-v1-stage34-360.webp",
+        "assets/stage26-enquiry-cutout-v1-stage34-720.webp",
+        "assets/stage26-enquiry-cutout-v1.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage26-enquiry-cutout-v1.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "2a558a0316a7ffa4b5b41e512eb6a3047947247fa71d781225287af39737f3b2",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage26-enquiry-cutout-v1.png"
+      }
+    },
+    {
+      "path": "assets/stage26-enquiry-cutout-v1-stage34-720.webp",
+      "sha256": "e8cbb381a821ccd7088deb748bd049778a76649c1ef5dc3cfe58c8b965a718b8",
+      "bytes": 155994,
+      "width": 720,
+      "height": 480,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "applications.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "approach.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "audit.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "automation.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "case-mu56.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "contacts.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "prices.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "projects.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "redesign.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "seo.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "support.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage26-enquiry-cutout-v1-stage34-360.webp",
+        "assets/stage26-enquiry-cutout-v1-stage34-540.webp",
+        "assets/stage26-enquiry-cutout-v1.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage26-enquiry-cutout-v1.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "e8cbb381a821ccd7088deb748bd049778a76649c1ef5dc3cfe58c8b965a718b8",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage26-enquiry-cutout-v1.png"
+      }
+    },
+    {
+      "path": "assets/stage26-enquiry-cutout-v1.png",
+      "sha256": "9875f6b17b6aeb226e5610424f5052dbee773958e581c0be4573924ceb7aaf3d",
+      "bytes": 305298,
+      "width": 720,
+      "height": 480,
+      "format": "PNG",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "applications.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "approach.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "audit.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "automation.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "case-mu56.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "contacts.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "prices.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "projects.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "redesign.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "seo.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "support.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage26-enquiry-cutout-v1-stage34-360.webp",
+        "assets/stage26-enquiry-cutout-v1-stage34-540.webp",
+        "assets/stage26-enquiry-cutout-v1-stage34-720.webp"
+      ],
+      "provenance": {
+        "kind": "unknown",
+        "source": "unknown",
+        "date": "unknown",
+        "purpose": "unknown",
+        "reviewed_sha256": "9875f6b17b6aeb226e5610424f5052dbee773958e581c0be4573924ceb7aaf3d",
+        "evidence": []
+      }
+    },
+    {
+      "path": "assets/stage27-hero-v1-stage34-480.webp",
+      "sha256": "767b1fd36582b24091a9866fb57396e81576223a5b460b58508e2c3841206be1",
+      "bytes": 98642,
+      "width": 480,
+      "height": 320,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "applications.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage27-hero-v1-stage34-720.webp",
+        "assets/stage27-hero-v1-stage34-960.webp",
+        "assets/stage27-hero-v1.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage27-hero-v1.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "767b1fd36582b24091a9866fb57396e81576223a5b460b58508e2c3841206be1",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage27-hero-v1.png"
+      }
+    },
+    {
+      "path": "assets/stage27-hero-v1-stage34-720.webp",
+      "sha256": "0d0954402b73844d73038832f03538b55856085df0598b089358da74db35b937",
+      "bytes": 212042,
+      "width": 720,
+      "height": 480,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "applications.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage27-hero-v1-stage34-480.webp",
+        "assets/stage27-hero-v1-stage34-960.webp",
+        "assets/stage27-hero-v1.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage27-hero-v1.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "0d0954402b73844d73038832f03538b55856085df0598b089358da74db35b937",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage27-hero-v1.png"
+      }
+    },
+    {
+      "path": "assets/stage27-hero-v1-stage34-960.webp",
+      "sha256": "84f0267286aa524fd94888cfbb56df14bc5151b0ff60a1c0e1c824e93793dc95",
+      "bytes": 318618,
+      "width": 960,
+      "height": 640,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "applications.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage27-hero-v1-stage34-480.webp",
+        "assets/stage27-hero-v1-stage34-720.webp",
+        "assets/stage27-hero-v1.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage27-hero-v1.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "84f0267286aa524fd94888cfbb56df14bc5151b0ff60a1c0e1c824e93793dc95",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage27-hero-v1.png"
+      }
+    },
+    {
+      "path": "assets/stage27-hero-v1.png",
+      "sha256": "af8992da87101ffb0b5af6912682c2aac1e29cdc69aea6904a3d114139a98eee",
+      "bytes": 694872,
+      "width": 960,
+      "height": 640,
+      "format": "PNG",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "applications.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage27-hero-v1-stage34-480.webp",
+        "assets/stage27-hero-v1-stage34-720.webp",
+        "assets/stage27-hero-v1-stage34-960.webp"
+      ],
+      "provenance": {
+        "kind": "generated_illustration",
+        "source": "Image generation; repository release note",
+        "date": "unknown",
+        "purpose": "Transparent brand illustration, not product screenshot",
+        "reviewed_sha256": "af8992da87101ffb0b5af6912682c2aac1e29cdc69aea6904a3d114139a98eee",
+        "evidence": [
+          "project-notes/site/STAGE27-RELEASE.md"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage27-process-cutout-stage34-480.webp",
+      "sha256": "d67312111e66644768f596c69893978106c86bcf1f32eb3329a1dd0ca1488c18",
+      "bytes": 78150,
+      "width": 480,
+      "height": 320,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "automation.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "support.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage27-process-cutout-stage34-720.webp",
+        "assets/stage27-process-cutout-stage34-960.webp",
+        "assets/stage27-process-cutout.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage27-process-cutout.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "d67312111e66644768f596c69893978106c86bcf1f32eb3329a1dd0ca1488c18",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage27-process-cutout.png"
+      }
+    },
+    {
+      "path": "assets/stage27-process-cutout-stage34-720.webp",
+      "sha256": "970010694779bc935ff5043b0c243077f93ab41ab9dc3503f7f524a5109c14c6",
+      "bytes": 162784,
+      "width": 720,
+      "height": 480,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "automation.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "support.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage27-process-cutout-stage34-480.webp",
+        "assets/stage27-process-cutout-stage34-960.webp",
+        "assets/stage27-process-cutout.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage27-process-cutout.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "970010694779bc935ff5043b0c243077f93ab41ab9dc3503f7f524a5109c14c6",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage27-process-cutout.png"
+      }
+    },
+    {
+      "path": "assets/stage27-process-cutout-stage34-960.webp",
+      "sha256": "cba7ad0bb112eab940ebdfe3a969657b91c734f3a275d772a65e12816e97a994",
+      "bytes": 228600,
+      "width": 960,
+      "height": 640,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "automation.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "support.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage27-process-cutout-stage34-480.webp",
+        "assets/stage27-process-cutout-stage34-720.webp",
+        "assets/stage27-process-cutout.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage27-process-cutout.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "cba7ad0bb112eab940ebdfe3a969657b91c734f3a275d772a65e12816e97a994",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage27-process-cutout.png"
+      }
+    },
+    {
+      "path": "assets/stage27-process-cutout.png",
+      "sha256": "26644d7d161ff88136ca6c89e9719c2b72c6dbb47e2c21bd6067db5ce8ee20c6",
+      "bytes": 426938,
+      "width": 960,
+      "height": 640,
+      "format": "PNG",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "automation.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "support.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage27-process-cutout-stage34-480.webp",
+        "assets/stage27-process-cutout-stage34-720.webp",
+        "assets/stage27-process-cutout-stage34-960.webp"
+      ],
+      "provenance": {
+        "kind": "generated_illustration",
+        "source": "Image generation; repository release note",
+        "date": "unknown",
+        "purpose": "Transparent brand illustration, not product screenshot",
+        "reviewed_sha256": "26644d7d161ff88136ca6c89e9719c2b72c6dbb47e2c21bd6067db5ce8ee20c6",
+        "evidence": [
+          "project-notes/site/STAGE27-RELEASE.md"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage28-websites-v1-stage34-480.webp",
+      "sha256": "d7bb41f25948512ca7c8d61bbcc6fd3f2aa68175135d484fed2ad644309df1de",
+      "bytes": 116094,
+      "width": 480,
+      "height": 320,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "approach.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "redesign.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "seo.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage28-websites-v1-stage34-720.webp",
+        "assets/stage28-websites-v1-stage34-960.webp",
+        "assets/stage28-websites-v1.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage28-websites-v1.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "d7bb41f25948512ca7c8d61bbcc6fd3f2aa68175135d484fed2ad644309df1de",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage28-websites-v1.png"
+      }
+    },
+    {
+      "path": "assets/stage28-websites-v1-stage34-720.webp",
+      "sha256": "1d96e2bd273cf160b6dba4dcf030901bf9b8267e75243eb3902bd0a39e44768b",
+      "bytes": 251902,
+      "width": 720,
+      "height": 480,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "approach.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "redesign.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "seo.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage28-websites-v1-stage34-480.webp",
+        "assets/stage28-websites-v1-stage34-960.webp",
+        "assets/stage28-websites-v1.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage28-websites-v1.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "1d96e2bd273cf160b6dba4dcf030901bf9b8267e75243eb3902bd0a39e44768b",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage28-websites-v1.png"
+      }
+    },
+    {
+      "path": "assets/stage28-websites-v1-stage34-960.webp",
+      "sha256": "e25fd9732222f6ed0de1141e9aa0865b1fea01d9fc45d365f963d999953e7539",
+      "bytes": 384042,
+      "width": 960,
+      "height": 640,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "approach.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "redesign.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "seo.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage28-websites-v1-stage34-480.webp",
+        "assets/stage28-websites-v1-stage34-720.webp",
+        "assets/stage28-websites-v1.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage28-websites-v1.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "e25fd9732222f6ed0de1141e9aa0865b1fea01d9fc45d365f963d999953e7539",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage28-websites-v1.png"
+      }
+    },
+    {
+      "path": "assets/stage28-websites-v1.png",
+      "sha256": "52f7926af195607b507265ff5276ac6786b005e7c0d2b2ee8e7284c4fa7a656b",
+      "bytes": 797645,
+      "width": 960,
+      "height": 640,
+      "format": "PNG",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "approach.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "redesign.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "seo.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "websites.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage28-websites-v1-stage34-480.webp",
+        "assets/stage28-websites-v1-stage34-720.webp",
+        "assets/stage28-websites-v1-stage34-960.webp"
+      ],
+      "provenance": {
+        "kind": "generated_illustration",
+        "source": "Repository website design brief",
+        "date": "unknown",
+        "purpose": "Decorative illustration of website formats",
+        "reviewed_sha256": "52f7926af195607b507265ff5276ac6786b005e7c0d2b2ee8e7284c4fa7a656b",
+        "evidence": [
+          "project-notes/site/STAGE28-WEBSITES-BRIEF.md"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage32-mu56-accent.png",
+      "sha256": "81963c6323890db2486aa03b50c9347b1ed49f181d774205afa5d6e2cc687521",
+      "bytes": 220650,
+      "width": 600,
+      "height": 400,
+      "format": "PNG",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "case-mu56.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "generated_illustration",
+        "source": "Image generation; prompt recorded in integration note",
+        "date": "2026-10-24",
+        "purpose": "Decorative case accent, not product evidence",
+        "reviewed_sha256": "81963c6323890db2486aa03b50c9347b1ed49f181d774205afa5d6e2cc687521",
+        "evidence": [
+          "project-notes/site/STAGE32-INTEGRATION.md"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage32-pilot-accent.png",
+      "sha256": "1cc8b79bac35004247d3aca0e6fba16079bebe69b218b0ab0463d0aea51adf09",
+      "bytes": 239881,
+      "width": 600,
+      "height": 400,
+      "format": "PNG",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "generated_illustration",
+        "source": "Image generation; prompt recorded in integration note",
+        "date": "2026-10-24",
+        "purpose": "Decorative case accent, not product evidence",
+        "reviewed_sha256": "1cc8b79bac35004247d3aca0e6fba16079bebe69b218b0ab0463d0aea51adf09",
+        "evidence": [
+          "project-notes/site/STAGE32-INTEGRATION.md"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage35-social-development.jpg",
+      "sha256": "e12e6b2943b081ded926ced844a747b32905621ec16de38c91be356751a0afb1",
+      "bytes": 60852,
+      "width": 1200,
+      "height": 630,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "audit.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "redesign.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "seo.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "support.html",
+          "roles": [
+            "social"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "composed_social_preview",
+        "source": "Repository native HTML capture",
+        "date": "unknown",
+        "purpose": "Social preview composition; not standalone product screenshot",
+        "reviewed_sha256": "e12e6b2943b081ded926ced844a747b32905621ec16de38c91be356751a0afb1",
+        "evidence": [
+          "tools/prepare_social_preview_html.py",
+          "tools/finalize_social_captures.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage35-social-general.jpg",
+      "sha256": "82ab84da1781ef0422a594f8763a4a14ce1355f9d4b28f436474e12e882b3e5b",
+      "bytes": 72110,
+      "width": 1200,
+      "height": 630,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "about.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "approach.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "contacts.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "prices.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "projects.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "services.html",
+          "roles": [
+            "social"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "composed_social_preview",
+        "source": "Repository native HTML capture",
+        "date": "unknown",
+        "purpose": "Social preview composition; not standalone product screenshot",
+        "reviewed_sha256": "82ab84da1781ef0422a594f8763a4a14ce1355f9d4b28f436474e12e882b3e5b",
+        "evidence": [
+          "tools/prepare_social_preview_html.py",
+          "tools/finalize_social_captures.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage35-social-mu56.jpg",
+      "sha256": "28fd5142bdf4f00b96a4f6796d4af46362345cb6a1f2ac5b0c16f46bc17a02ca",
+      "bytes": 74315,
+      "width": 1200,
+      "height": 630,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "case-mu56.html",
+          "roles": [
+            "social"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "composed_social_preview",
+        "source": "Repository native HTML capture",
+        "date": "unknown",
+        "purpose": "Social preview composition; not standalone product screenshot",
+        "reviewed_sha256": "28fd5142bdf4f00b96a4f6796d4af46362345cb6a1f2ac5b0c16f46bc17a02ca",
+        "evidence": [
+          "tools/prepare_social_preview_html.py",
+          "tools/finalize_social_captures.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage35-social-pilotspace.jpg",
+      "sha256": "4a78fa9c5816c4339918ffea38c5c1c2b0ced3ee5eaf30a6140b06e17fab99ec",
+      "bytes": 50901,
+      "width": 1200,
+      "height": 630,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "case-pilotspace.html",
+          "roles": [
+            "social"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "composed_social_preview",
+        "source": "Repository native HTML capture",
+        "date": "unknown",
+        "purpose": "Social preview composition; not standalone product screenshot",
+        "reviewed_sha256": "4a78fa9c5816c4339918ffea38c5c1c2b0ced3ee5eaf30a6140b06e17fab99ec",
+        "evidence": [
+          "tools/prepare_social_preview_html.py",
+          "tools/finalize_social_captures.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage35-social-systems.jpg",
+      "sha256": "91a498f500ce5119fe72e0eaab929881347980ce6d246257851f8231ce03f97d",
+      "bytes": 61471,
+      "width": 1200,
+      "height": 630,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "applications.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "automation.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "integrations.html",
+          "roles": [
+            "social"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "social"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "composed_social_preview",
+        "source": "Repository native HTML capture",
+        "date": "unknown",
+        "purpose": "Social preview composition; not standalone product screenshot",
+        "reviewed_sha256": "91a498f500ce5119fe72e0eaab929881347980ce6d246257851f8231ce03f97d",
+        "evidence": [
+          "tools/prepare_social_preview_html.py",
+          "tools/finalize_social_captures.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage35-social-websites.jpg",
+      "sha256": "173f95b66db3ac8b2dda4c0dc3d2e6d82a81c881dc3fb8f38fb4de4fc2e68a08",
+      "bytes": 73243,
+      "width": 1200,
+      "height": 630,
+      "format": "JPEG",
+      "has_alpha_channel": false,
+      "has_transparency": false,
+      "pages": [
+        {
+          "path": "websites.html",
+          "roles": [
+            "social"
+          ]
+        }
+      ],
+      "responsive_variants": [],
+      "provenance": {
+        "kind": "composed_social_preview",
+        "source": "Repository native HTML capture",
+        "date": "unknown",
+        "purpose": "Social preview composition; not standalone product screenshot",
+        "reviewed_sha256": "173f95b66db3ac8b2dda4c0dc3d2e6d82a81c881dc3fb8f38fb4de4fc2e68a08",
+        "evidence": [
+          "tools/prepare_social_preview_html.py",
+          "tools/finalize_social_captures.py"
+        ]
+      }
+    },
+    {
+      "path": "assets/stage36-auto-480.webp",
+      "sha256": "bc452a4677cc23027baeb1fcae69ac35c1a1eb639593cdc0f34dfc7c27308cd3",
+      "bytes": 71390,
+      "width": 480,
+      "height": 320,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "automation.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage36-auto-720.webp",
+        "assets/stage36-auto-960.webp",
+        "assets/stage36-auto.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage36-auto.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "bc452a4677cc23027baeb1fcae69ac35c1a1eb639593cdc0f34dfc7c27308cd3",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage36-auto.png"
+      }
+    },
+    {
+      "path": "assets/stage36-auto-720.webp",
+      "sha256": "865990e020ee55515365a801a932614d0431102fd1780d5fd08d7bdde525a76b",
+      "bytes": 153062,
+      "width": 720,
+      "height": 480,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "automation.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage36-auto-480.webp",
+        "assets/stage36-auto-960.webp",
+        "assets/stage36-auto.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage36-auto.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "865990e020ee55515365a801a932614d0431102fd1780d5fd08d7bdde525a76b",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage36-auto.png"
+      }
+    },
+    {
+      "path": "assets/stage36-auto-960.webp",
+      "sha256": "463ce9a1f58d9662942128727aac52b4ca5ea1a3d15bce72404e14a4d5a19fac",
+      "bytes": 239472,
+      "width": 960,
+      "height": 640,
+      "format": "WEBP",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "automation.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "srcset"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "srcset"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage36-auto-480.webp",
+        "assets/stage36-auto-720.webp",
+        "assets/stage36-auto.png"
+      ],
+      "provenance": {
+        "kind": "responsive_derivative",
+        "source": "assets/stage36-auto.png",
+        "date": "unknown",
+        "purpose": "Lossless responsive derivative; provenance inherited from source",
+        "reviewed_sha256": "463ce9a1f58d9662942128727aac52b4ca5ea1a3d15bce72404e14a4d5a19fac",
+        "evidence": [
+          "tools/prepare_responsive_images.py"
+        ],
+        "derived_from": "assets/stage36-auto.png"
+      }
+    },
+    {
+      "path": "assets/stage36-auto.png",
+      "sha256": "1f58cd0f235872c1685194dfdc007f8cc5462c556ff5ef17faef5eb2949ede1c",
+      "bytes": 357992,
+      "width": 960,
+      "height": 640,
+      "format": "PNG",
+      "has_alpha_channel": true,
+      "has_transparency": true,
+      "pages": [
+        {
+          "path": "automation.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "index.html",
+          "roles": [
+            "img"
+          ]
+        },
+        {
+          "path": "solutions.html",
+          "roles": [
+            "img"
+          ]
+        }
+      ],
+      "responsive_variants": [
+        "assets/stage36-auto-480.webp",
+        "assets/stage36-auto-720.webp",
+        "assets/stage36-auto-960.webp"
+      ],
+      "provenance": {
+        "kind": "generated_illustration",
+        "source": "Image generation; original render path recorded in integration note",
+        "date": "2026-10-24",
+        "purpose": "Illustrative car-service process, not client interface or result",
+        "reviewed_sha256": "1f58cd0f235872c1685194dfdc007f8cc5462c556ff5ef17faef5eb2949ede1c",
+        "evidence": [
+          "project-notes/site/STAGE36-INTEGRATION.md"
+        ]
+      }
+    }
+  ]
+}
