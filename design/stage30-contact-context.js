@@ -45,14 +45,17 @@
       '&body=' + encodeURIComponent(publicText));
   }
   message.addEventListener('input', () => { status.textContent = ''; });
+  let inFlight = false;
   button.addEventListener('click', async () => {
+    if (inFlight) return;
     const text = message.value.trim();
     if (!text) {
       status.textContent = 'Добавьте несколько слов о задаче.';
       message.focus();
       return;
     }
-    button.disabled = true;
+    inFlight = true;
+    button.setAttribute('aria-disabled', 'true');
     try {
       if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
       await navigator.clipboard.writeText(text);
@@ -62,7 +65,8 @@
       message.select();
       status.textContent = 'Автоматически скопировать не удалось. Текст выделен — скопируйте его вручную.';
     } finally {
-      button.disabled = false;
+      inFlight = false;
+      button.setAttribute('aria-disabled', 'false');
     }
   });
   root.hidden = false;

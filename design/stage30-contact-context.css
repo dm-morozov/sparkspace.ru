@@ -10,7 +10,7 @@
 .contact30-context #contact30-help{font-size:12px;line-height:1.7;color:var(--muted);margin:12px 0 18px}
 .contact30-copy-row{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
 .contact30-copy-row .btn{font:inherit;font-size:14px;cursor:pointer;border:0;white-space:normal;text-align:left}
-.contact30-copy-row .btn:disabled{opacity:.65;cursor:wait}
+.contact30-copy-row .btn:disabled,.contact30-copy-row .btn[aria-disabled=true]{opacity:.65;cursor:wait}
 .contact30-copy-row [role=status]{font-size:13px;line-height:1.6;color:var(--muted)}
 .contact30-copy-row [role=status]:empty{display:none}
 .contact30-price-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:20px}
