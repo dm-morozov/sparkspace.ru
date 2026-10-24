@@ -1,0 +1,4 @@
+# Preserve reviewed CSS bytes and the existing cascade across checkouts.
+# This disables newline conversion; CSS remains diffable text.
+design/*.css -text
+design/styles/*.css -text

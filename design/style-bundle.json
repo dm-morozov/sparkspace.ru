@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "notes": "Ordered partial extraction: legacy includes fonts and Stage25. Literal entries contain only comments/whitespace; named overrides preserve the exact original cascade.",
+  "entries": [
+    {
+      "source": "styles/legacy-base.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "/* Integrated stage29-navigation.css */\n"
+    },
+    {
+      "source": "stage29-navigation.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n/* Integrated stage29-services.css */\n"
+    },
+    {
+      "source": "stage29-services.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n/* Integrated stage29-service-detail.css */\n"
+    },
+    {
+      "source": "stage29-service-detail.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n/* Integrated stage29-products.css */\n"
+    },
+    {
+      "source": "stage29-products.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n/* Integrated stage29-company.css */\n"
+    },
+    {
+      "source": "stage29-company.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n/* Integrated stage29-portfolio.css */\n"
+    },
+    {
+      "source": "stage29-portfolio.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n/* Integrated stage30-mobile-process.css */\n"
+    },
+    {
+      "source": "stage30-mobile-process.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n/* Integrated stage30-contact-context.css */\n"
+    },
+    {
+      "source": "stage30-contact-context.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n/* Integrated stage31-commercial.css */\n"
+    },
+    {
+      "source": "stage31-commercial.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n/* Integrated stage31-interaction.css */\n"
+    },
+    {
+      "source": "stage31-interaction.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n/* Integrated stage31-services-polish.css */\n"
+    },
+    {
+      "source": "stage31-services-polish.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n"
+    },
+    {
+      "source": "stage32-cases.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n"
+    },
+    {
+      "source": "stage32-process.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n"
+    },
+    {
+      "source": "stage33-navigation.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n"
+    },
+    {
+      "source": "styles/price-format-links.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n"
+    },
+    {
+      "source": "styles/picture-layout.css",
+      "eol": "preserve"
+    },
+    {
+      "source": "stage34-case-zoom.css",
+      "eol": "preserve"
+    },
+    {
+      "literal": "\n"
+    },
+    {
+      "source": "stage36-price-reading.css",
+      "eol": "preserve"
+    },
+    {
+      "source": "styles/auto-art-mobile.css",
+      "eol": "preserve"
+    }
+  ]
+}

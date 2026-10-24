@@ -2,6 +2,7 @@
 from pathlib import Path
 from html import escape
 import hashlib
+import style_bundle
 import stage2
 import stage3
 import stage4
@@ -26,6 +27,7 @@ import stage29_service_detail
 import stage16
 import stage18
 R=Path(__file__).parent
+style_bundle.build()
 SCRIPT_VERSION=hashlib.sha256((R/"script.js").read_bytes()).hexdigest()[:12]
 CONTACT_VERSION=hashlib.sha256((R/"stage30-contact-context.js").read_bytes()).hexdigest()[:12]
 FLOW_VERSION=hashlib.sha256((R/"flows.js").read_bytes()).hexdigest()[:12]
