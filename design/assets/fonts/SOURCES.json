@@ -1,0 +1,47 @@
+{
+  "family": "Golos Text",
+  "distribution_version": "Google Fonts gstatic v7",
+  "retrieved_utc": "2026-10-24T19:16:37.5157009Z",
+  "source_css_url": "https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap",
+  "source_css_sha256": "9ec523bb82523fb6b94cf96c979ff4bb0354e3db0f4e85ff369b59f6ed792e38",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+  "license_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/golostext/OFL.txt",
+  "license_sha256": "ff532f9e8789f09a9fdffc3c0954eedfb0a48be77b2e2eb90f5f82e4f347f50c",
+  "weights": [
+    400,
+    500,
+    600,
+    700,
+    800
+  ],
+  "files": [
+    {
+      "subset": "cyrillic-ext",
+      "file": "golos-text-v7-cyrillic-ext.woff2",
+      "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hLxR.woff2",
+      "bytes": 17508,
+      "sha256": "70cf502d77aa23c8a573db8853f20a8db705d18414d170f257a9e939113aad47"
+    },
+    {
+      "subset": "cyrillic",
+      "file": "golos-text-v7-cyrillic.woff2",
+      "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExd8hLxR.woff2",
+      "bytes": 22032,
+      "sha256": "17d048ca05cb1218af3c0d6dcdf882989e6d1cc5dcb598ea50eaf54850ff7229"
+    },
+    {
+      "subset": "latin-ext",
+      "file": "golos-text-v7-latin-ext.woff2",
+      "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hLxR.woff2",
+      "bytes": 19180,
+      "sha256": "05befabe4813f41238ce6ea4f5ecd6b758591e9ef2f303a9932bff68ba66dc66"
+    },
+    {
+      "subset": "latin",
+      "file": "golos-text-v7-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcExN8hA.woff2",
+      "bytes": 37916,
+      "sha256": "9a69d0aa4734c4022224c002a3d944a702e0204972a49d892789f5668b922c2a"
+    }
+  ]
+}
